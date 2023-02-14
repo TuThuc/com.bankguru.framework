@@ -26,7 +26,8 @@
         <jackson.version>2.10.0</jackson.version>
         <webdrivermanager.version>5.0.2</webdrivermanager.version>
         <aspectj.version>1.9.8</aspectj.version>
-        <extent.version>5.0.8</extent.version>
+        <allure.version>2.18.1</allure.version>
+
         <faker.version>1.0.1</faker.version>
     </properties>
 
@@ -77,9 +78,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>${extent.version}</version>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure.version}</version>
         </dependency>
 
         <dependency>
