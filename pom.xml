@@ -151,7 +151,7 @@
                 <configuration>
                     <!-- Run TestNG xml file -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/runTechPandaUser.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/runBankGuru.xml</suiteXmlFile>
                     </suiteXmlFiles>
 
                     <!-- Argument -->
