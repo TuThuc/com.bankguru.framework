@@ -24,9 +24,10 @@
         <webdriver.version>3.141.59</webdriver.version>
         <testng.version>6.14.3</testng.version>
         <jackson.version>2.10.0</jackson.version>
-        <webdrivermanager.version>5.0.2</webdrivermanager.version>
+        <webdrivermanager.version>5.3.1</webdrivermanager.version>
         <aspectj.version>1.9.8</aspectj.version>
         <allure.version>2.18.1</allure.version>
+        <owner.version>1.0.12</owner.version>
 
         <faker.version>1.0.1</faker.version>
     </properties>
@@ -89,7 +90,6 @@
             <version>2.0</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -126,7 +126,20 @@
             <version>${aspectj.version}</version>
             <scope>runtime</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.aeonbits.owner</groupId>
+            <artifactId>owner</artifactId>
+            <version>${owner.version}</version>
+        </dependency>
     </dependencies>
+
 
     <!-- Compiler/ Run Test -->
     <build>

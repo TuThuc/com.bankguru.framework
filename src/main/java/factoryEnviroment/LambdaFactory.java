@@ -36,7 +36,7 @@ public class LambdaFactory {
         capability.setCapability("sauce:options", capability);
 
         try {
-            driver = new RemoteWebDriver(new URL(GlobalConstants.SAUCE_URL), capability);
+            driver = new RemoteWebDriver(new URL(GlobalConstants.getGlobalConstants().getSaucelabUrl()), capability);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

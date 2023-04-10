@@ -21,7 +21,7 @@ import factoryEnviroment.LocalFactory;
 import factoryEnviroment.SauceLabFactory;
 
 public class BaseTest {
-    private WebDriver driver;
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
     protected final Log log;
 
     @BeforeSuite
@@ -36,80 +36,52 @@ public class BaseTest {
     protected WebDriver getBrowserDriver(String envName, String browserName, String serverName, String ipAddress, String portNumber, String osName, String osVersion) {
         switch (envName) {
             case "local":
-                driver = new LocalFactory(browserName).creatDriver();
+                driver.set(new LocalFactory(browserName).creatDriver());
                 break;
             case "grid":
-                driver = new GridFactory(browserName, ipAddress, portNumber).creatDriver();
+                driver.set(new GridFactory(browserName, ipAddress, portNumber).creatDriver());
                 break;
             case "browserStack":
-                driver = new BrowserstackFactory(browserName, osName, osVersion).creatDriver();
+                driver.set(new BrowserstackFactory(browserName, osName, osVersion).creatDriver());
 
                 break;
             case "sauceLab":
-                driver = new SauceLabFactory(browserName, osName).creatDriver();
+                driver.set(new SauceLabFactory(browserName, osName).creatDriver());
                 break;
             case "Lambda":
-                driver = new LambdaFactory(browserName, osName).creatDriver();
+                driver.set(new LambdaFactory(browserName, osName).creatDriver());
                 break;
             default:
-                driver = new LocalFactory(browserName).creatDriver();
+                driver.set(new LocalFactory(browserName).creatDriver());
 
                 break;
         }
-        driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-        driver.get(getEnvironmentURL(serverName));
-        return driver;
+        driver.get().manage().timeouts().implicitlyWait(GlobalConstants.getGlobalConstants().getLongTimeout(), TimeUnit.SECONDS);
+        driver.get().manage().window().maximize();
+        driver.get().get(serverName);
+        return driver.get();
     }
 
-    protected WebDriver getBrowserDrivers(String envName, String browserName, String appURL, String ipAddress, String portNumber, String osName, String osVersion) {
-        switch (envName) {
-            case "local":
-                driver = new LocalFactory(browserName).creatDriver();
-                break;
-            case "grid":
-                driver = new GridFactory(browserName, ipAddress, portNumber).creatDriver();
-                break;
-            case "browserStack":
-                driver = new BrowserstackFactory(browserName, osName, osVersion).creatDriver();
 
-                break;
-            case "sauceLab":
-                driver = new SauceLabFactory(browserName, osName).creatDriver();
-                break;
-            case "Lambda":
-                driver = new LambdaFactory(browserName, osName).creatDriver();
-                break;
+    private String getAppUrlByServerName(String serverName) {
+        System.out.println("Server name: " + serverName);
+        EnvironmentList serverList = EnvironmentList.valueOf(serverName.toUpperCase());
+        switch (serverList) {
+            case DEV:
+            return GlobalConstants.getGlobalConstants().getDevAppUrl();
+            case TESTING:
+            return GlobalConstants.getGlobalConstants().getTestAppUrl();
+            case STAGING:
+            return GlobalConstants.getGlobalConstants().getStagingAppUrl();
+            case PRODUCTION:
+            return GlobalConstants.getGlobalConstants().getProductAppUrl();
             default:
-                driver = new LocalFactory(browserName).creatDriver();
-
-                break;
+            throw new RuntimeException("Server name is invalid");
         }
-        driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-        driver.get(appURL);
-        return driver;
-    }
-
-    private String getEnvironmentURL(String serverName) {
-        String envURL = null;
-        EnvironmentList environment = EnvironmentList.valueOf(serverName.toUpperCase());
-        if (environment == EnvironmentList.DEV) {
-            envURL = "https://demo.nopcommerce.com";
-        } else if (environment == EnvironmentList.TESTING) {
-            envURL = "https://demo.nopcommerce.com";
-        } else if (environment == EnvironmentList.STAGING) {
-            envURL = "https://demo.nopcommerce.com";
-        } else if (environment == EnvironmentList.PRODUCTION) {
-            envURL = "https://demo.nopcommerce.com";
-        } else if (environment == EnvironmentList.LOCAL) {
-            envURL = "https://demo.nopcommerce.com";
-        }
-        return envURL;
     }
 
     public WebDriver getDriverInstance() {
-        return this.driver;
+        return this.driver.get();
     }
 
     protected int generateFakeNumber() {
@@ -161,10 +133,10 @@ public class BaseTest {
         return pass;
     }
 
-    public void deleteAllureReport() {
+    private void deleteAllureReport() {
         try {
 
-            String pathFolderDownload = GlobalConstants.PROJECT_PATH + "/allure-results";
+            String pathFolderDownload = GlobalConstants.getGlobalConstants().getProjectPath() + "/allure-results";
             File file = new File(pathFolderDownload);
             File[] listOfFiles = file.listFiles();
             for (int i = 0; i < listOfFiles.length; i++) {
@@ -185,7 +157,7 @@ public class BaseTest {
                 String osName = System.getProperty("os.name").toLowerCase();
                 log.info("OS name = " + osName);
 
-                String driverInstanceName = driver.toString().toLowerCase();
+                String driverInstanceName = driver.get().toString().toLowerCase();
                 log.info("Driver instance name = " + driverInstanceName);
 
                 if (driverInstanceName.contains("chrome")) {
@@ -223,8 +195,9 @@ public class BaseTest {
                 }
 
                 if (driver != null) {
-                    driver.manage().deleteAllCookies();
-                    driver.quit();
+                    driver.get().manage().deleteAllCookies();
+                    driver.get().quit();
+                    driver.remove();
                 }
             } catch (Exception e) {
                 log.info(e.getMessage());
