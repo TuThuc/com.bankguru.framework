@@ -20,7 +20,7 @@ import factoryEnviroment.LambdaFactory;
 import factoryEnviroment.LocalFactory;
 import factoryEnviroment.SauceLabFactory;
 
-public class BaseTest {
+public abstract class BaseTest {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
     protected final Log log;
 

@@ -128,10 +128,6 @@ public class BasePage {
         }
 
     }
-    // Locator type: id=/ css=/ class=/ name=/ xpath=
-    // Locator type: Id=/ Css=/ class=/ Name=/ Xpath=
-    // Locator type: ID=/ CSS=/ class=/ NAME=/ XPATH=
-
     private By getByLocator(String locatorType) {
         By by = null;
         if (locatorType.startsWith("id=") || locatorType.startsWith("Id=") || locatorType.startsWith("ID=")) {
