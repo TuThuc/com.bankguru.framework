@@ -1,25 +1,17 @@
-1682493992664	geckodriver	INFO	Listening on 127.0.0.1:13610
-1682493995249	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\TUTHUC~1\\AppData\\Local\\Temp\\rust_mozprofileiTL8S5"
+1682499576879	geckodriver	INFO	Listening on 127.0.0.1:22696
+1682499578088	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\TUTHUC~1\\AppData\\Local\\Temp\\rust_mozprofileVBH07F"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1682494002487	Marionette	INFO	Marionette enabled
+1682499582025	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
-1682494002605	Marionette	INFO	Listening on port 62857
-Read port: 62857
-Read port: 62857
-Read port: 62857
-1682494008373	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1682499582052	Marionette	INFO	Listening on port 63762
+Read port: 63762
+1682499584861	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 762))
 console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 414))
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\TUTHUC~1\\AppData\\Local\\Temp\\rust_mozprofileiTL8S5\\search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\TUTHUC~1\\AppData\\Local\\Temp\\rust_mozprofileVBH07F\\search.json.mozlz4", (void 0)))
 [ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
-JavaScript warning: https://pagead2.googlesyndication.com/bg/BnousL5ILBVKPox_BhCtx9cLC8w-HAhp3a1hPLgmzAw.js line 2 > eval line 1845 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-JavaScript warning: https://pagead2.googlesyndication.com/bg/BnousL5ILBVKPox_BhCtx9cLC8w-HAhp3a1hPLgmzAw.js line 2 > eval line 47 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-1682494175145	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
-TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
-1682494239666	Marionette	INFO	Stopped listening on port 62857
+1682499635537	Marionette	INFO	Stopped listening on port 63762
 Dynamically enable window occlusion 1
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 18720, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
