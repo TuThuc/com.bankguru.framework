@@ -28,8 +28,6 @@
         <aspectj.version>1.9.8</aspectj.version>
         <allure.version>2.18.1</allure.version>
         <owner.version>1.0.12</owner.version>
-        <log4j.version>1.2.17</log4j.version>
-
         <faker.version>1.0.1</faker.version>
     </properties>
 
@@ -138,11 +136,6 @@
             <groupId>org.aeonbits.owner</groupId>
             <artifactId>owner</artifactId>
             <version>${owner.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>${log4j.version}</version>
         </dependency>
     </dependencies>
 
