@@ -14,15 +14,15 @@ import testcases.com.bankguru.common.Register;
 import utilities.DataHelper;
 
 public class Customer_01_New_Customer extends BaseTest {
-    Environment environment;
+   // Environment environment;
     @Parameters({"envName", "serverName", "browserName", "ipAddress", "port", "osName", "osVersion"})
     @BeforeClass
     public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("Windows") String osName, @Optional("10") String osVersion,
                             @Optional("localhost") String ipAddress, @Optional("4444") String portNumber) {
-        String env = System.getProperty("env");
-        ConfigFactory.setProperty("server", env);
-        environment = ConfigFactory.create(Environment.class);
-        driver = getBrowserDriver(envName, browserName, environment.getUserUrl(), ipAddress, portNumber, osName, osVersion);
+       // String env = System.getProperty("env");
+       // ConfigFactory.setProperty("server", env);
+        //environment = ConfigFactory.create(Environment.class);
+        driver = getBrowserDriver(envName, browserName,serverName, ipAddress, portNumber, osName, osVersion);
         dataFaker = DataHelper.getDataHelper();
 
         nameHaveNumber = "123name";

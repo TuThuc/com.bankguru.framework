@@ -58,7 +58,7 @@ public abstract class BaseTest {
         }
         driver.get().manage().timeouts().implicitlyWait(GlobalConstants.getGlobalConstants().getLongTimeout(), TimeUnit.SECONDS);
         driver.get().manage().window().maximize();
-        driver.get().get(serverName);
+        driver.get().get(getAppUrlByServerName(serverName));
         return driver.get();
     }
 
