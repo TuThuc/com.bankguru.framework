@@ -1,10 +1,8 @@
 package testcases.com.bankguru.customer;
 
 import commons.BaseTest;
-import commons.Environment;
 import commons.PageGeneratorManager;
 import io.qameta.allure.Description;
-import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import pageObjects.HomePageObject;

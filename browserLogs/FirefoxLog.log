@@ -1,35 +1,26 @@
-1682591700494	geckodriver	INFO	Listening on 127.0.0.1:12130
-1682591701372	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\TUTHUC~1\\AppData\\Local\\Temp\\rust_mozprofilejsfc5b"
+1682654408902	geckodriver	INFO	Listening on 127.0.0.1:22972
+1682654427090	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\TUTHUC~1\\AppData\\Local\\Temp\\rust_mozprofilecVPU9J"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1682591702969	Marionette	INFO	Marionette enabled
+1682654458278	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
-1682591702975	Marionette	INFO	Listening on port 58216
-Read port: 58216
-1682591703104	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\TUTHUC~1\\AppData\\Local\\Temp\\rust_mozprofilejsfc5b\\search.json.mozlz4", (void 0)))
+1682654458344	Marionette	INFO	Listening on port 53172
+Read port: 53172
+Read port: 53172
+1682654460506	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 414))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\TUTHUC~1\\AppData\\Local\\Temp\\rust_mozprofilecVPU9J\\search.json.mozlz4", (void 0)))
+JavaScript warning: moz-extension://829bb6e2-2b98-49e4-9632-6a6b63effd97/lib/filter/antibanner.js, line 1176: unreachable code after return statement
 [ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
 console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 488))
-1682591744929	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
-TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
-interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
-webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
-console.warn: services.settings: Ignoring preference override of remote settings server
-console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 599))
-console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.guru99.com."
-console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.guru99.com."
-Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
-getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:297:29
-observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
-
-console.error: "Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null\ngetMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:297:29\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:576:16\n"
-1682591751851	Marionette	INFO	Stopped listening on port 58216
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.jsm", 237))
+1682654604778	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1682654607411	Marionette	WARN	Ignoring ev1682654681271	Marionette	INFO	Stopped listening on port 53090
 Dynamically enable window occlusion 1
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
-JavaScript warning: https://pagead2.googlesyndication.com/bg/w05zGG9qaosOBIL1Kb6OkKtrB9U8AfHvOijkE_qF5Xk.js line 2 > eval line 2249 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
-*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_untrustedmodules_ping
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 115: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953481
+u99.com."
+1682654633085	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1682654681270	Marionette	INFO	Stopped listening on port 53172
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 115: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953543
+Dynamically enable window occlusion 1

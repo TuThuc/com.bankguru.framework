@@ -35,6 +35,7 @@ public class GlobalConstants {
     private final String  productAppUrl = "https://demo.guru99.com/v4/";
 
     private final String uploadPath = getFolderSeparator("uploadFiles");
+    private final String extensionPath = getFolderSeparator("extensions");
     private final String downloadPath = getFolderSeparator("downloadFiles");
     //private final String browserLogs = getFolderSeparator("browserLogs") + "FirefoxLog.log";
     private final String browserLogs = projectPath + fileSeparator + "browserLogs" + fileSeparator + "FirefoxLog.log";
@@ -51,6 +52,6 @@ public class GlobalConstants {
     private final String lambdaUrk = "https://" + lambdaUserName + ":" + lambdaAutoKey + "@hub.lambdatest.com/wd/hub";
 
     private  String getFolderSeparator(String folderName) {
-        return projectPath + fileSeparator + "folderName" + fileSeparator;
+        return projectPath + fileSeparator + folderName + fileSeparator;
     }
 }
