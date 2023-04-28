@@ -293,6 +293,6 @@ public class Customer_02_Edit_Customer extends BaseTest {
     private HomePageObject homePage;
     private EditCustomerPageObject editCustomer;
     private String dateOfBirth, state, phoneNumber, pinNo,customerID , cusIDHaveSpecialCharacter, cityHaveNumber, stateHaveSpecialCharacter, pinHaveCharacter, pinMoreSixNumber, mobileHaveCharacter, emailInvalid;
-Environment environment;
+     private Environment environment;
 
 }

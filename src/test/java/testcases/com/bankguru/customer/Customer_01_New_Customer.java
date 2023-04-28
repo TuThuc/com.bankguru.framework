@@ -1,8 +1,10 @@
 package testcases.com.bankguru.customer;
 
 import commons.BaseTest;
+import commons.Environment;
 import commons.PageGeneratorManager;
 import io.qameta.allure.Description;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import pageObjects.HomePageObject;
@@ -12,15 +14,15 @@ import testcases.com.bankguru.common.Register;
 import utilities.DataHelper;
 
 public class Customer_01_New_Customer extends BaseTest {
-   // Environment environment;
+
     @Parameters({"envName", "serverName", "browserName", "ipAddress", "port", "osName", "osVersion"})
     @BeforeClass
     public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("Windows") String osName, @Optional("10") String osVersion,
                             @Optional("localhost") String ipAddress, @Optional("4444") String portNumber) {
-       // String env = System.getProperty("env");
-       // ConfigFactory.setProperty("server", env);
-        //environment = ConfigFactory.create(Environment.class);
-        driver = getBrowserDriver(envName, browserName,serverName, ipAddress, portNumber, osName, osVersion);
+        String env = System.getProperty("env");
+       ConfigFactory.setProperty("server", env);
+        environment = ConfigFactory.create(Environment.class);
+        driver = getBrowserDriver(envName, browserName,environment.getUserUrl(), ipAddress, portNumber, osName, osVersion);
         dataFaker = DataHelper.getDataHelper();
 
         nameHaveNumber = "123name";
@@ -134,4 +136,5 @@ public class Customer_01_New_Customer extends BaseTest {
     private LoginPageObject loginPage;
     private HomePageObject homePage;
     private NewCustomerPageObject newCustomer;
+    private Environment environment;
 }

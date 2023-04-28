@@ -26,7 +26,7 @@ public class Account_03_Delete_Account extends BaseTest {
 
         environment = ConfigFactory.create(Environment.class);
 
-        driver = getBrowserDriver(envName, browserName, serverName, ipAddress, portNumber, osName, osVersion);
+        driver = getBrowserDriver(envName, browserName, environment.getUserUrl(), ipAddress, portNumber, osName, osVersion);
 
         loginPage = PageGeneratorManager.getLoginPage(driver);
 

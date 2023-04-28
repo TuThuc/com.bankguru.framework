@@ -1,8 +1,10 @@
 package testcases.com.bankguru.statement;
 
 import commons.BaseTest;
+import commons.Environment;
 import commons.PageGeneratorManager;
 import io.qameta.allure.Description;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import pageObjects.HomePageObject;
@@ -15,8 +17,10 @@ public class Mini_Statement extends BaseTest {
     @BeforeClass
     public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("Windows") String osName, @Optional("10") String osVersion,
                             @Optional("localhost") String ipAddress, @Optional("4444") String portNumber) {
-
-        driver = getBrowserDriver(envName, browserName, serverName, ipAddress, portNumber, osName, osVersion);
+String env = System.getProperty("env");
+ConfigFactory.setProperty("server", env);
+environment = ConfigFactory.create(Environment.class);
+        driver = getBrowserDriver(envName, browserName, environment.getUserUrl(), ipAddress, portNumber, osName, osVersion);
 
         loginPage = PageGeneratorManager.getLoginPage(driver);
 
@@ -100,6 +104,7 @@ public class Mini_Statement extends BaseTest {
     private HomePageObject homePage;
     private MiniStatementPageObject miniStatement;
     private  String accountNumberHaveCharacter, accountNumberHaveSpecialCharacter, accountNumberHaveBlank;
+    private Environment environment;
 
 }
 
