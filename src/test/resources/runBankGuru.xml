@@ -12,6 +12,14 @@
     <classes>
         <class name="testcases.com.bankguru.common.Register"/>
        <class name="testcases.com.bankguru.customer.Customer_01_New_Customer"/>
+        <class name="testcases.com.bankguru.customer.Customer_02_Edit_Customer"/>
+        <class name="testcases.com.bankguru.customer.Customer_03_Delete_Customer"/>
+        <class name="testcases.com.bankguru.account.Account_01_New_Account"/>
+        <class name="testcases.com.bankguru.account.Account_02_Edit_Account"/>
+        <class name="testcases.com.bankguru.account.Account_03_Delete_Account"/>
+        <class name="testcases.com.bankguru.statement.Customised_Statement"/>
+        <class name="testcases.com.bankguru.statement.Mini_Statement"/>
+        <class name="testcases.com.bankguru.Change_Password"/>
     </classes>
 </test>-->
     <test name="Run on chrome ">
@@ -19,6 +27,14 @@
   <classes>
       <class name="testcases.com.bankguru.common.Register"/>
       <class name="testcases.com.bankguru.customer.Customer_01_New_Customer"/>
+      <class name="testcases.com.bankguru.customer.Customer_02_Edit_Customer"/>
+      <class name="testcases.com.bankguru.customer.Customer_03_Delete_Customer"/>
+      <class name="testcases.com.bankguru.account.Account_01_New_Account"/>
+      <class name="testcases.com.bankguru.account.Account_02_Edit_Account"/>
+      <class name="testcases.com.bankguru.account.Account_03_Delete_Account"/>
+      <class name="testcases.com.bankguru.statement.Customised_Statement"/>
+      <class name="testcases.com.bankguru.statement.Mini_Statement"/>
+      <class name="testcases.com.bankguru.Change_Password"/>
   </classes>
   </test>
 </suite>
