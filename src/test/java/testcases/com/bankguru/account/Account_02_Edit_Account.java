@@ -16,7 +16,7 @@ import pageObjects.LoginPageObject;
 import testcases.com.bankguru.common.Register;
 
 public class Account_02_Edit_Account extends BaseTest {
-    @Parameters({"envName", "browserName", "ipAddress", "port", "osName", "osVersion"})
+    @Parameters({"envName", "serverName", "browserName", "ipAddress", "port", "osName", "osVersion"})
     @BeforeClass
     public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("Windows") String osName, @Optional("10") String osVersion,
                             @Optional("localhost") String ipAddress, @Optional("4444") String portNumber) {

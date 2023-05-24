@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="BankGuru" thread-count = "1">
 <parameter name ="envName" value = "local"/>
-<parameter name ="serverName" value = "testing"/>
-
   <listeners>
-  <!--<listener class-name ="commons.MethodListener"/>-->
 <listener class-name="reportConfig.AllureTestListener"/>
   </listeners>
 <test name="Run on firefox ">
