@@ -13,7 +13,7 @@ import testcases.com.bankguru.common.Register;
 
 public class Account_01_New_Account extends BaseTest {
     @Parameters({"envName", "serverName", "browserName", "ipAddress", "port", "osName", "osVersion"})
-    @BeforeClass
+    @BeforeClass( alwaysRun=true )
     public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("Windows") String osName, @Optional("10") String osVersion,
                             @Optional("localhost") String ipAddress, @Optional("4444") String portNumber) {
         String env = System.getProperty("env");
@@ -47,7 +47,7 @@ public class Account_01_New_Account extends BaseTest {
     }
 
     @Description("New account with CustomerID is empty")
-    @Test
+    @Test( groups = "regressionTest")
     public void TC_01_New_Account_With_CustomerId_Is_Special_Character() {
 
         homePage.openSideBarPageByTitle(driver, "New Account");
@@ -60,7 +60,7 @@ public class Account_01_New_Account extends BaseTest {
     }
 
     @Description("New account with CustomerID have special character ")
-    @Test
+    @Test(groups = "smoke")
     public void TC_02_New_Account_With_CustomerId_Have_Special_Character() {
 
         homePage.openSideBarPageByTitle(driver, "New Account");
@@ -73,7 +73,7 @@ public class Account_01_New_Account extends BaseTest {
     }
 
     @Description("New account with CustomerID have character ")
-    @Test
+    @Test(priority = 2, groups = "regressionTest")
     public void TC_03_New_Account_With_CustomerId_Have_Character() {
 
         homePage.openSideBarPageByTitle(driver, "New Account");
@@ -86,7 +86,7 @@ public class Account_01_New_Account extends BaseTest {
     }
 
     @Description("New account with Initial Deposit have character ")
-    @Test
+    @Test(groups = "smoke")
     public void TC_04_New_Account_With_Initial_Deposit_Have_Character() {
 
         homePage.openSideBarPageByTitle(driver, "New Account");
@@ -111,12 +111,11 @@ public class Account_01_New_Account extends BaseTest {
         verifyEquals(newAccount.getFieldErrorMessageById(driver, "message19"), "Special characters are not allowed");
     }
 
-    @Parameters("envName")
-    @AfterClass(alwaysRun = true)
-    public void afterClass() {
-        closeBrowserAndDriver("envName");
-    }
-
+   @AfterClass(alwaysRun = true)
+   public void afterClass() {
+  //     closeBrowserAndDriver("envName");
+       closeBrowserAndDriver();
+   }
     private WebDriver driver;
     private LoginPageObject loginPage;
     private HomePageObject homePage;

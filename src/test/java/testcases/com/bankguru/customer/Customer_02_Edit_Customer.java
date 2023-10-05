@@ -11,6 +11,7 @@ import pageObjects.customer.EditCustomerPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.customer.NewCustomerPageObject;
+import retryConfig.RetryFailedManager;
 import testcases.com.bankguru.common.Register;
 import utilities.DataHelper;
 
@@ -94,7 +95,7 @@ public class Customer_02_Edit_Customer extends BaseTest {
 
     }
 @Description("Edit customer with CustomerID is Special Character")
-   @Test
+   @Test()
     public void TC_01_Edit_Customer_With_CustomerId_Is_Special_Character() {
 
         homePage.openSideBarPageByTitle(driver,"Edit Customer");
@@ -281,10 +282,10 @@ public class Customer_02_Edit_Customer extends BaseTest {
 
         verifyEquals(editCustomer.getFieldErrorMessageById(driver,"message9"),"Email-ID is not valid");
     }
-    @Parameters("envName")
     @AfterClass(alwaysRun = true)
     public void afterClass() {
-        closeBrowserAndDriver("envName");
+        //     closeBrowserAndDriver("envName");
+        closeBrowserAndDriver();
     }
     private WebDriver driver;
     private DataHelper dataFaker;

@@ -149,7 +149,9 @@ public abstract class BaseTest {
             System.out.print(e.getMessage());
         }
     }
-
+    protected void closeBrowserAndDriver() {
+        driver.get().quit();
+    }
     protected void closeBrowserAndDriver(String envName) {
         if (envName.equals("local") || envName.equals("grid")) {
             String cmd = "";

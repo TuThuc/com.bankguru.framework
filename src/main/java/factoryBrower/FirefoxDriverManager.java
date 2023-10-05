@@ -19,7 +19,7 @@ public class FirefoxDriverManager implements BrowserFactory {
         FirefoxProfile profile = new FirefoxProfile();
         profile.addExtension(new File(GlobalConstants.getGlobalConstants().getExtensionPath()+ "adblocker_ultimate-3.7.21.xpi"));
         options.setProfile(profile);
-        System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+       // System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
        System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.getGlobalConstants().getBrowserLogs());
         options.addPreference("intl.accept_languages", "vi-vn, vi, en-us, en");
         options.setAcceptInsecureCerts(true);

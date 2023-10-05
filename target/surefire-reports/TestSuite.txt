@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 109, Failures: 3, Errors: 0, Skipped: 7, Time elapsed: 364.98 s <<< FAILURE! - in TestSuite
+beforeClass(testcases.com.bankguru.customer.Customer_01_New_Customer)  Time elapsed: 23.428 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+
+TC_01_Delete_Customer_With_CustomerID_Is_Empty(testcases.com.bankguru.customer.Customer_03_Delete_Customer)  Time elapsed: 2.855 s  <<< FAILURE!
+java.lang.AssertionError: expected [Customer ID is required...] but found [Customer ID is required]
+	at testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_01_Delete_Customer_With_CustomerID_Is_Empty(Customer_03_Delete_Customer.java:101)
+
+TC_01_Delete_Customer_With_CustomerID_Is_Empty(testcases.com.bankguru.customer.Customer_03_Delete_Customer)  Time elapsed: 1.073 s  <<< FAILURE!
+java.lang.AssertionError: expected [Customer ID is required...] but found [Customer ID is required]
+	at testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_01_Delete_Customer_With_CustomerID_Is_Empty(Customer_03_Delete_Customer.java:101)
+

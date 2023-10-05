@@ -1,0 +1,707 @@
+<html>
+<head>
+<title>TestNG:  Run on chrome </title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Run on chrome </h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>47/1/7</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 05 21:47:57 ICT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>332 seconds (332735 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass()'><b>beforeClass</b><br>Test class: testcases.com.bankguru.customer.Customer_01_New_Customer<br>Parameters: local, dev, chrome, Windows, 10, localhost, 4444</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at commons.BasePage.sendkeyToElement(BasePage.java:179)
+	at pageObjects.LoginPageObject.inputToUserIDTextbox(LoginPageObject.java:23)
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace237805647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace237805647'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at commons.BasePage.sendkeyToElement(BasePage.java:179)
+	at pageObjects.LoginPageObject.inputToUserIDTextbox(LoginPageObject.java:23)
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>19</td>
+<td>testcases.com.bankguru.customer.Customer_01_New_Customer@6975fb1c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_01_Delete_Customer_With_CustomerID_Is_Empty()'><b>TC_01_Delete_Customer_With_CustomerID_Is_Empty</b><br>Test class: testcases.com.bankguru.customer.Customer_03_Delete_Customer</td>
+<td><div><pre>java.lang.AssertionError: expected [Customer ID is required...] but found [Customer ID is required]
+	at commons.BaseTest.verifyEquals(BaseTest.java:125)
+	at testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_01_Delete_Customer_With_CustomerID_Is_Empty(Customer_03_Delete_Customer.java:101)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1745832015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1745832015'><pre>java.lang.AssertionError: expected [Customer ID is required...] but found [Customer ID is required]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at commons.BaseTest.verifyEquals(BaseTest.java:125)
+	at testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_01_Delete_Customer_With_CustomerID_Is_Empty(Customer_03_Delete_Customer.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>5</td>
+<td>testcases.com.bankguru.customer.Customer_03_Delete_Customer@327e5be5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.com.bankguru.Change_Password.TC_01_Change_Password_With_Old_Password_Is_Empty()'><b>TC_01_Change_Password_With_Old_Password_Is_Empty</b><br>Test class: testcases.com.bankguru.Change_Password</td>
+<td></td>
+<td>3</td>
+<td>testcases.com.bankguru.Change_Password@3513c84c</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Customised_Statement.TC_01_Customised_Statement_With_Account_Number_Is_Empty()'><b>TC_01_Customised_Statement_With_Account_Number_Is_Empty</b><br>Test class: testcases.com.bankguru.statement.Customised_Statement</td>
+<td></td>
+<td>3</td>
+<td>testcases.com.bankguru.statement.Customised_Statement@2e4389ed</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_03_Delete_Account.TC_01_Delete_Account_With_Account_Number_Is_Empty()'><b>TC_01_Delete_Account_With_Account_Number_Is_Empty</b><br>Test class: testcases.com.bankguru.account.Account_03_Delete_Account</td>
+<td></td>
+<td>6</td>
+<td>testcases.com.bankguru.account.Account_03_Delete_Account@6ea246af</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_02_Edit_Account.TC_01_Edit_Account_With_Account_Number_Is_Empty()'><b>TC_01_Edit_Account_With_Account_Number_Is_Empty</b><br>Test class: testcases.com.bankguru.account.Account_02_Edit_Account</td>
+<td></td>
+<td>3</td>
+<td>testcases.com.bankguru.account.Account_02_Edit_Account@566f1852</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_02_Edit_Customer.TC_01_Edit_Customer_With_CustomerId_Is_Special_Character()'><b>TC_01_Edit_Customer_With_CustomerId_Is_Special_Character</b><br>Test class: testcases.com.bankguru.customer.Customer_02_Edit_Customer</td>
+<td></td>
+<td>0</td>
+<td>testcases.com.bankguru.customer.Customer_02_Edit_Customer@553da911</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Mini_Statement.TC_01_Mini_Statement_With_Account_Number_Is_Empty()'><b>TC_01_Mini_Statement_With_Account_Number_Is_Empty</b><br>Test class: testcases.com.bankguru.statement.Mini_Statement</td>
+<td></td>
+<td>3</td>
+<td>testcases.com.bankguru.statement.Mini_Statement@1b90fee4</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_01_New_Account.TC_01_New_Account_With_CustomerId_Is_Special_Character()'><b>TC_01_New_Account_With_CustomerId_Is_Special_Character</b><br>Test class: testcases.com.bankguru.account.Account_01_New_Account</td>
+<td></td>
+<td>4</td>
+<td>testcases.com.bankguru.account.Account_01_New_Account@1084ac45</td></tr>
+<tr>
+<td title='testcases.com.bankguru.Change_Password.TC_02_Change_Password_With_New_Password_Is_Empty()'><b>TC_02_Change_Password_With_New_Password_Is_Empty</b><br>Test class: testcases.com.bankguru.Change_Password</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.Change_Password@3513c84c</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Customised_Statement.TC_02_Customised_Statement_With_Account_Number_Have_Character()'><b>TC_02_Customised_Statement_With_Account_Number_Have_Character</b><br>Test class: testcases.com.bankguru.statement.Customised_Statement</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.statement.Customised_Statement@2e4389ed</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_03_Delete_Account.TC_02_Delete_Account_With_Account_Number_Have_Character()'><b>TC_02_Delete_Account_With_Account_Number_Have_Character</b><br>Test class: testcases.com.bankguru.account.Account_03_Delete_Account</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.account.Account_03_Delete_Account@6ea246af</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_02_Delete_Customer_With_CustomerID_Have_Character()'><b>TC_02_Delete_Customer_With_CustomerID_Have_Character</b><br>Test class: testcases.com.bankguru.customer.Customer_03_Delete_Customer</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.customer.Customer_03_Delete_Customer@327e5be5</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_02_Edit_Account.TC_02_Edit_Account_With_Account_Number_Have_Character()'><b>TC_02_Edit_Account_With_Account_Number_Have_Character</b><br>Test class: testcases.com.bankguru.account.Account_02_Edit_Account</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.account.Account_02_Edit_Account@566f1852</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_02_Edit_Customer.TC_02_Edit_Customer_With_CustomerId_Is_Valid()'><b>TC_02_Edit_Customer_With_CustomerId_Is_Valid</b><br>Test class: testcases.com.bankguru.customer.Customer_02_Edit_Customer</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.customer.Customer_02_Edit_Customer@553da911</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Mini_Statement.TC_02_Mini_Statement_With_Account_Number_Have_Character()'><b>TC_02_Mini_Statement_With_Account_Number_Have_Character</b><br>Test class: testcases.com.bankguru.statement.Mini_Statement</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.statement.Mini_Statement@1b90fee4</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_01_New_Account.TC_02_New_Account_With_CustomerId_Have_Special_Character()'><b>TC_02_New_Account_With_CustomerId_Have_Special_Character</b><br>Test class: testcases.com.bankguru.account.Account_01_New_Account</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.account.Account_01_New_Account@1084ac45</td></tr>
+<tr>
+<td title='testcases.com.bankguru.Change_Password.TC_03_Change_Password_With_New_Password_Have_Not_Number()'><b>TC_03_Change_Password_With_New_Password_Have_Not_Number</b><br>Test class: testcases.com.bankguru.Change_Password</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.Change_Password@3513c84c</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Customised_Statement.TC_03_Customised_Statement_With_Account_Number_Have_Special_Character()'><b>TC_03_Customised_Statement_With_Account_Number_Have_Special_Character</b><br>Test class: testcases.com.bankguru.statement.Customised_Statement</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.statement.Customised_Statement@2e4389ed</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_03_Delete_Account.TC_03_Delete_Account_With_Account_Number_Have_Special_Character()'><b>TC_03_Delete_Account_With_Account_Number_Have_Special_Character</b><br>Test class: testcases.com.bankguru.account.Account_03_Delete_Account</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.account.Account_03_Delete_Account@6ea246af</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_03_Delete_Account.TC_03_Delete_Account_With_Account_Number_Have_Special_Space()'><b>TC_03_Delete_Account_With_Account_Number_Have_Special_Space</b><br>Test class: testcases.com.bankguru.account.Account_03_Delete_Account</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.account.Account_03_Delete_Account@6ea246af</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_03_Delete_Customer_With_CustomerID_Have_Special_Character()'><b>TC_03_Delete_Customer_With_CustomerID_Have_Special_Character</b><br>Test class: testcases.com.bankguru.customer.Customer_03_Delete_Customer</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.customer.Customer_03_Delete_Customer@327e5be5</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_02_Edit_Account.TC_03_Edit_Account_With_Account_Number_Have_Special_Character()'><b>TC_03_Edit_Account_With_Account_Number_Have_Special_Character</b><br>Test class: testcases.com.bankguru.account.Account_02_Edit_Account</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.account.Account_02_Edit_Account@566f1852</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_02_Edit_Account.TC_03_Edit_Account_With_Account_Number_Have_Special_Space()'><b>TC_03_Edit_Account_With_Account_Number_Have_Special_Space</b><br>Test class: testcases.com.bankguru.account.Account_02_Edit_Account</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.account.Account_02_Edit_Account@566f1852</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_02_Edit_Customer.TC_03_Edit_Customer_With_EmailAddress_Is_Blank()'><b>TC_03_Edit_Customer_With_EmailAddress_Is_Blank</b><br>Test class: testcases.com.bankguru.customer.Customer_02_Edit_Customer</td>
+<td></td>
+<td>6</td>
+<td>testcases.com.bankguru.customer.Customer_02_Edit_Customer@553da911</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Mini_Statement.TC_03_Mini_Statement_With_Account_Number_Have_Special_Character()'><b>TC_03_Mini_Statement_With_Account_Number_Have_Special_Character</b><br>Test class: testcases.com.bankguru.statement.Mini_Statement</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.statement.Mini_Statement@1b90fee4</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_01_New_Account.TC_03_New_Account_With_CustomerId_Have_Character()'><b>TC_03_New_Account_With_CustomerId_Have_Character</b><br>Test class: testcases.com.bankguru.account.Account_01_New_Account</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.account.Account_01_New_Account@1084ac45</td></tr>
+<tr>
+<td title='testcases.com.bankguru.Change_Password.TC_04_Change_Password_With_New_Password_Have_Not_Special_Character()'><b>TC_04_Change_Password_With_New_Password_Have_Not_Special_Character</b><br>Test class: testcases.com.bankguru.Change_Password</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.Change_Password@3513c84c</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Customised_Statement.TC_04_Customised_Statement_With_Account_Number_Have_Character_Space()'><b>TC_04_Customised_Statement_With_Account_Number_Have_Character_Space</b><br>Test class: testcases.com.bankguru.statement.Customised_Statement</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.statement.Customised_Statement@2e4389ed</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_02_Edit_Customer.TC_04_Edit_Customer_With_City_Is_Blank()'><b>TC_04_Edit_Customer_With_City_Is_Blank</b><br>Test class: testcases.com.bankguru.customer.Customer_02_Edit_Customer</td>
+<td></td>
+<td>7</td>
+<td>testcases.com.bankguru.customer.Customer_02_Edit_Customer@553da911</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Mini_Statement.TC_04_Mini_Statement_With_Account_Number_Have_Special_Space()'><b>TC_04_Mini_Statement_With_Account_Number_Have_Special_Space</b><br>Test class: testcases.com.bankguru.statement.Mini_Statement</td>
+<td></td>
+<td>5</td>
+<td>testcases.com.bankguru.statement.Mini_Statement@1b90fee4</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_01_New_Account.TC_04_New_Account_With_Initial_Deposit_Have_Character()'><b>TC_04_New_Account_With_Initial_Deposit_Have_Character</b><br>Test class: testcases.com.bankguru.account.Account_01_New_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.com.bankguru.account.Account_01_New_Account@1084ac45</td></tr>
+<tr>
+<td title='testcases.com.bankguru.Change_Password.TC_05_Change_Password_With_New_Password_Have_Password_Terms()'><b>TC_05_Change_Password_With_New_Password_Have_Password_Terms</b><br>Test class: testcases.com.bankguru.Change_Password</td>
+<td></td>
+<td>4</td>
+<td>testcases.com.bankguru.Change_Password@3513c84c</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Customised_Statement.TC_05_Customised_Statement_With_Minimum_Transaction_Value_Have_Character()'><b>TC_05_Customised_Statement_With_Minimum_Transaction_Value_Have_Character</b><br>Test class: testcases.com.bankguru.statement.Customised_Statement</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.statement.Customised_Statement@2e4389ed</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_05_Delete_Customer_Successful()'><b>TC_05_Delete_Customer_Successful</b><br>Test class: testcases.com.bankguru.customer.Customer_03_Delete_Customer</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.customer.Customer_03_Delete_Customer@327e5be5</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_02_Edit_Customer.TC_05_Edit_Customer_With_City_Have_Number()'><b>TC_05_Edit_Customer_With_City_Have_Number</b><br>Test class: testcases.com.bankguru.customer.Customer_02_Edit_Customer</td>
+<td></td>
+<td>2</td>
+<td>testcases.com.bankguru.customer.Customer_02_Edit_Customer@553da911</td></tr>
+<tr>
+<td title='testcases.com.bankguru.account.Account_01_New_Account.TC_05_New_Account_With_Initial_Deposit_Have_Special_Character()'><b>TC_05_New_Account_With_Initial_Deposit_Have_Special_Character</b><br>Test class: testcases.com.bankguru.account.Account_01_New_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.com.bankguru.account.Account_01_New_Account@1084ac45</td></tr>
+<tr>
+<td title='testcases.com.bankguru.Change_Password.TC_06_Change_Password_With_Confirm_Password_Not_Match_Password()'><b>TC_06_Change_Password_With_Confirm_Password_Not_Match_Password</b><br>Test class: testcases.com.bankguru.Change_Password</td>
+<td></td>
+<td>2</td>
+<td>testcases.com.bankguru.Change_Password@3513c84c</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Customised_Statement.TC_06_Customised_Statement_With_Minimum_Transaction_Value_Have_Special_Character()'><b>TC_06_Customised_Statement_With_Minimum_Transaction_Value_Have_Special_Character</b><br>Test class: testcases.com.bankguru.statement.Customised_Statement</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.statement.Customised_Statement@2e4389ed</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_02_Edit_Customer.TC_06_Edit_Customer_With_State_Is_Blank()'><b>TC_06_Edit_Customer_With_State_Is_Blank</b><br>Test class: testcases.com.bankguru.customer.Customer_02_Edit_Customer</td>
+<td></td>
+<td>2</td>
+<td>testcases.com.bankguru.customer.Customer_02_Edit_Customer@553da911</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Customised_Statement.TC_07_Customised_Statement_With_Minimum_Transaction_Value_Have_Character_Space()'><b>TC_07_Customised_Statement_With_Minimum_Transaction_Value_Have_Character_Space</b><br>Test class: testcases.com.bankguru.statement.Customised_Statement</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.statement.Customised_Statement@2e4389ed</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_02_Edit_Customer.TC_07_Edit_Customer_With_State_Have_Special_Character()'><b>TC_07_Edit_Customer_With_State_Have_Special_Character</b><br>Test class: testcases.com.bankguru.customer.Customer_02_Edit_Customer</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.customer.Customer_02_Edit_Customer@553da911</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Customised_Statement.TC_08_Customized_Statement_With_Number_Of_Tracsaction_Have_Character()'><b>TC_08_Customized_Statement_With_Number_Of_Tracsaction_Have_Character</b><br>Test class: testcases.com.bankguru.statement.Customised_Statement</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.statement.Customised_Statement@2e4389ed</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_02_Edit_Customer.TC_08_Edit_Customer_With_PIN_Have_Character()'><b>TC_08_Edit_Customer_With_PIN_Have_Character</b><br>Test class: testcases.com.bankguru.customer.Customer_02_Edit_Customer</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.customer.Customer_02_Edit_Customer@553da911</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Customised_Statement.TC_09_Customized_Statement_With_Number_Of_Tracsaction_Have_Special_Character()'><b>TC_09_Customized_Statement_With_Number_Of_Tracsaction_Have_Special_Character</b><br>Test class: testcases.com.bankguru.statement.Customised_Statement</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.statement.Customised_Statement@2e4389ed</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_02_Edit_Customer.TC_09_Edit_Customer_With_PIN_More_Six_Number()'><b>TC_09_Edit_Customer_With_PIN_More_Six_Number</b><br>Test class: testcases.com.bankguru.customer.Customer_02_Edit_Customer</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.customer.Customer_02_Edit_Customer@553da911</td></tr>
+<tr>
+<td title='testcases.com.bankguru.statement.Customised_Statement.TC_10_Customized_Statement_With_Number_Of_Tracsaction_Have_Character_Space()'><b>TC_10_Customized_Statement_With_Number_Of_Tracsaction_Have_Character_Space</b><br>Test class: testcases.com.bankguru.statement.Customised_Statement</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.statement.Customised_Statement@2e4389ed</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_02_Edit_Customer.TC_10_Edit_Customer_With_Mobile_Number_Have_Character()'><b>TC_10_Edit_Customer_With_Mobile_Number_Have_Character</b><br>Test class: testcases.com.bankguru.customer.Customer_02_Edit_Customer</td>
+<td></td>
+<td>2</td>
+<td>testcases.com.bankguru.customer.Customer_02_Edit_Customer@553da911</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_02_Edit_Customer.TC_11_Edit_Customer_With_Email_Address_Is_Invalid()'><b>TC_11_Edit_Customer_With_Email_Address_Is_Invalid</b><br>Test class: testcases.com.bankguru.customer.Customer_02_Edit_Customer</td>
+<td></td>
+<td>1</td>
+<td>testcases.com.bankguru.customer.Customer_02_Edit_Customer@553da911</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_01_Delete_Customer_With_CustomerID_Is_Empty()'><b>TC_01_Delete_Customer_With_CustomerID_Is_Empty</b><br>Test class: testcases.com.bankguru.customer.Customer_03_Delete_Customer</td>
+<td><div><pre>java.lang.AssertionError: expected [Customer ID is required...] but found [Customer ID is required]
+	at commons.BaseTest.verifyEquals(BaseTest.java:125)
+	at testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_01_Delete_Customer_With_CustomerID_Is_Empty(Customer_03_Delete_Customer.java:101)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace878742033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace878742033'><pre>java.lang.AssertionError: expected [Customer ID is required...] but found [Customer ID is required]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at commons.BaseTest.verifyEquals(BaseTest.java:125)
+	at testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_01_Delete_Customer_With_CustomerID_Is_Empty(Customer_03_Delete_Customer.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>6</td>
+<td>testcases.com.bankguru.customer.Customer_03_Delete_Customer@327e5be5</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_01_Delete_Customer_With_CustomerID_Is_Empty()'><b>TC_01_Delete_Customer_With_CustomerID_Is_Empty</b><br>Test class: testcases.com.bankguru.customer.Customer_03_Delete_Customer</td>
+<td><div><pre>java.lang.AssertionError: expected [Customer ID is required...] but found [Customer ID is required]
+	at commons.BaseTest.verifyEquals(BaseTest.java:125)
+	at testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_01_Delete_Customer_With_CustomerID_Is_Empty(Customer_03_Delete_Customer.java:101)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace851019889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace851019889'><pre>java.lang.AssertionError: expected [Customer ID is required...] but found [Customer ID is required]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at commons.BaseTest.verifyEquals(BaseTest.java:125)
+	at testcases.com.bankguru.customer.Customer_03_Delete_Customer.TC_01_Delete_Customer_With_CustomerID_Is_Empty(Customer_03_Delete_Customer.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>5</td>
+<td>testcases.com.bankguru.customer.Customer_03_Delete_Customer@327e5be5</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_01_New_Customer.TC_01_New_Customer_With_Name_Empty()'><b>TC_01_New_Customer_With_Name_Empty</b><br>Test class: testcases.com.bankguru.customer.Customer_01_New_Customer</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at commons.BasePage.sendkeyToElement(BasePage.java:179)
+	at pageObjects.LoginPageObject.inputToUserIDTextbox(LoginPageObject.java:23)
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1736381071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1736381071'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at commons.BasePage.sendkeyToElement(BasePage.java:179)
+	at pageObjects.LoginPageObject.inputToUserIDTextbox(LoginPageObject.java:23)
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>testcases.com.bankguru.customer.Customer_01_New_Customer@6975fb1c</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_01_New_Customer.TC_02_New_Customer_With_Name_Number()'><b>TC_02_New_Customer_With_Name_Number</b><br>Test class: testcases.com.bankguru.customer.Customer_01_New_Customer</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at commons.BasePage.sendkeyToElement(BasePage.java:179)
+	at pageObjects.LoginPageObject.inputToUserIDTextbox(LoginPageObject.java:23)
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace69514486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace69514486'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at commons.BasePage.sendkeyToElement(BasePage.java:179)
+	at pageObjects.LoginPageObject.inputToUserIDTextbox(LoginPageObject.java:23)
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>testcases.com.bankguru.customer.Customer_01_New_Customer@6975fb1c</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_01_New_Customer.TC_03_New_Customer_With_Name_Have_Special_Character()'><b>TC_03_New_Customer_With_Name_Have_Special_Character</b><br>Test class: testcases.com.bankguru.customer.Customer_01_New_Customer</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at commons.BasePage.sendkeyToElement(BasePage.java:179)
+	at pageObjects.LoginPageObject.inputToUserIDTextbox(LoginPageObject.java:23)
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1332378909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1332378909'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at commons.BasePage.sendkeyToElement(BasePage.java:179)
+	at pageObjects.LoginPageObject.inputToUserIDTextbox(LoginPageObject.java:23)
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>testcases.com.bankguru.customer.Customer_01_New_Customer@6975fb1c</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_01_New_Customer.TC_04_New_Customer_With_Name_Start_As_Blank_Character()'><b>TC_04_New_Customer_With_Name_Start_As_Blank_Character</b><br>Test class: testcases.com.bankguru.customer.Customer_01_New_Customer</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at commons.BasePage.sendkeyToElement(BasePage.java:179)
+	at pageObjects.LoginPageObject.inputToUserIDTextbox(LoginPageObject.java:23)
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1752856113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1752856113'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at commons.BasePage.sendkeyToElement(BasePage.java:179)
+	at pageObjects.LoginPageObject.inputToUserIDTextbox(LoginPageObject.java:23)
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>testcases.com.bankguru.customer.Customer_01_New_Customer@6975fb1c</td></tr>
+<tr>
+<td title='testcases.com.bankguru.customer.Customer_01_New_Customer.TC_05_New_Customer_With_Address_Empty()'><b>TC_05_New_Customer_With_Address_Empty</b><br>Test class: testcases.com.bankguru.customer.Customer_01_New_Customer</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at commons.BasePage.sendkeyToElement(BasePage.java:179)
+	at pageObjects.LoginPageObject.inputToUserIDTextbox(LoginPageObject.java:23)
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace677762697", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace677762697'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at commons.BasePage.sendkeyToElement(BasePage.java:179)
+	at pageObjects.LoginPageObject.inputToUserIDTextbox(LoginPageObject.java:23)
+	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>testcases.com.bankguru.customer.Customer_01_New_Customer@6975fb1c</td></tr>
+</table><p>
+</body>
+</html>

@@ -202,12 +202,11 @@ public class Customised_Statement extends BaseTest {
         verifyEquals(customisedStatement.getFieldErrorMessageById(driver, "message13"), "Characters are not allowed");
     }
 
-    @Parameters("envName")
     @AfterClass(alwaysRun = true)
     public void afterClass() {
-        closeBrowserAndDriver("envName");
+        //     closeBrowserAndDriver("envName");
+        closeBrowserAndDriver();
     }
-
     private WebDriver driver;
     private LoginPageObject loginPage;
     private HomePageObject homePage;

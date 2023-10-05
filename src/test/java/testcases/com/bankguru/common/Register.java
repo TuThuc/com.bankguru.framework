@@ -13,10 +13,10 @@ import utilities.DataHelper;
 public class Register extends BaseTest {
 
     @Parameters({"envName", "serverName", "browserName", "ipAddress", "port", "osName", "osVersion"})
-    @BeforeTest
+    @BeforeTest( alwaysRun = true)
     public void beforeTest(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("Windows") String osName, @Optional("10") String osVersion,
                             @Optional("localhost") String ipAddress, @Optional("4444") String portNumber) {
-       String env = System.getProperty("env");
+        String env = System.getProperty("env");
         ConfigFactory.setProperty("server", env);
         environment = ConfigFactory.create(Environment.class);
         driver = getBrowserDriver(envName, browserName, environment.getUserUrl(), ipAddress, portNumber, osName, osVersion);
@@ -32,8 +32,8 @@ public class Register extends BaseTest {
         userID = registerPage.getUserInfor();
 
         password = registerPage.getPasswordInfor();
-
-        closeBrowserAndDriver("envName");
+closeBrowserAndDriver();
+      //  closeBrowserAndDriver("envName");
     }
     private WebDriver driver;
     private DataHelper dataFaker;

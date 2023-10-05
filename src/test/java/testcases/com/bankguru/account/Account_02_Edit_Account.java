@@ -6,10 +6,7 @@ import commons.PageGeneratorManager;
 import io.qameta.allure.Description;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pageObjects.account.EditAccountPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
@@ -17,7 +14,7 @@ import testcases.com.bankguru.common.Register;
 
 public class Account_02_Edit_Account extends BaseTest {
     @Parameters({"envName", "serverName", "browserName", "ipAddress", "port", "osName", "osVersion"})
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("Windows") String osName, @Optional("10") String osVersion,
                             @Optional("localhost") String ipAddress, @Optional("4444") String portNumber) {
         String env = System.getProperty("env");
@@ -46,7 +43,7 @@ public class Account_02_Edit_Account extends BaseTest {
     }
 
     @Description("Edit account with Account number is empty ")
-    @Test
+    @Test(groups = "smoke")
     public void TC_01_Edit_Account_With_Account_Number_Is_Empty() {
 
         homePage.openSideBarPageByTitle(driver, "Edit Account");
@@ -103,6 +100,11 @@ public class Account_02_Edit_Account extends BaseTest {
         editAccount.pressTabAtTextboxByName(driver, "accountno");
 
         verifyEquals(editAccount.getFieldErrorMessageById(driver, "message2"), "Characters are not allowed");
+    }
+    @AfterClass(alwaysRun = true)
+    public void afterClass() {
+        //     closeBrowserAndDriver("envName");
+        closeBrowserAndDriver();
     }
 
     private WebDriver driver;

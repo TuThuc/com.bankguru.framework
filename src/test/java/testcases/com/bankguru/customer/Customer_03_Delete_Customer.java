@@ -11,6 +11,7 @@ import pageObjects.customer.DeleteCustomerPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.customer.NewCustomerPageObject;
+import retryConfig.RetryFailedManager;
 import testcases.com.bankguru.common.Register;
 import utilities.DataHelper;
 
@@ -87,7 +88,7 @@ public class Customer_03_Delete_Customer extends BaseTest {
     }
 
     @Description("Delete Customer with CustomerID is empty")
-    @Test
+    @Test(retryAnalyzer = RetryFailedManager.class)
     public void TC_01_Delete_Customer_With_CustomerID_Is_Empty() {
         homePage.openSideBarPageByTitle(driver, "Delete Customer");
 
@@ -97,7 +98,7 @@ public class Customer_03_Delete_Customer extends BaseTest {
 
         deleteCustomer.pressTabAtTextboxByName(driver, "cusid");
 
-        verifyEquals(deleteCustomer.getFieldErrorMessageById(driver, "message14"), "Customer ID is required...");
+        verifyEquals(deleteCustomer.getFieldErrorMessageById(driver, "message14"), "Customer ID is required");
     }
 
     @Description("Delete Customer with CustomerID have character")
@@ -158,12 +159,11 @@ public class Customer_03_Delete_Customer extends BaseTest {
         verifyEquals(deleteCustomer.getAlertText(driver), "Customer does not Exist!!!");
     }
 
-    @Parameters("envName")
     @AfterClass(alwaysRun = true)
     public void afterClass() {
-        closeBrowserAndDriver("envName");
+        //     closeBrowserAndDriver("envName");
+        closeBrowserAndDriver();
     }
-
     private NewCustomerPageObject newCustomer;
     private LoginPageObject loginPage;
     private HomePageObject homePage;

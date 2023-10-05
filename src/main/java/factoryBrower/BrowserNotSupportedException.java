@@ -1,6 +1,7 @@
 package factoryBrower;
 
-public class BrowserNotSupportedException extends IllegalStateException {
+public class
+BrowserNotSupportedException extends IllegalStateException {
     private static final long serialVersionUID = 1L;
 
     public BrowserNotSupportedException (String browser) {

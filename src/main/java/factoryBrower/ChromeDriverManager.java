@@ -6,6 +6,7 @@ import java.util.Map;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import commons.GlobalConstants;
 
@@ -31,7 +32,9 @@ public class ChromeDriverManager implements BrowserFactory {
         chromaePrefs.put("profile.password_manager_enabled", false);
         options.setAcceptInsecureCerts(true);
         options.addArguments("--lang=vi");
-        return WebDriverManager.chromedriver().capabilities(options).create();
+       // return WebDriverManager.chromedriver().capabilities(options).create();
+         WebDriver driver = new ChromeDriver(options);
+         return  driver;
     }
 
 }

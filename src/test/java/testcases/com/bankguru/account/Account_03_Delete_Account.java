@@ -6,10 +6,7 @@ import commons.PageGeneratorManager;
 import io.qameta.allure.Description;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pageObjects.account.DeleteAccountPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
@@ -104,7 +101,11 @@ public class Account_03_Delete_Account extends BaseTest {
 
         verifyEquals(deleteAccount.getFieldErrorMessageById(driver, "message2"), "Characters are not allowed");
     }
-
+    @AfterClass(alwaysRun = true)
+    public void afterClass() {
+        //     closeBrowserAndDriver("envName");
+        closeBrowserAndDriver();
+    }
     private WebDriver driver;
     private LoginPageObject loginPage;
     private HomePageObject homePage;

@@ -21,7 +21,7 @@
         <maven.compiler.source>11</maven.compiler.source>
 
         <!-- Global variable for dependencies -->
-        <webdriver.version>3.141.59</webdriver.version>
+        <webdriver.version>4.11.0</webdriver.version>
         <testng.version>6.14.3</testng.version>
         <jackson.version>2.10.0</jackson.version>
         <webdrivermanager.version>5.3.1</webdrivermanager.version>
@@ -29,6 +29,8 @@
         <allure.version>2.18.1</allure.version>
         <owner.version>1.0.12</owner.version>
         <faker.version>1.0.1</faker.version>
+        <log4jcore.version>2.20.0</log4jcore.version>
+        <log4japi.version>2.20.0</log4japi.version>
     </properties>
 
     <!-- Quản lí thư viện -->
@@ -136,6 +138,17 @@
             <groupId>org.aeonbits.owner</groupId>
             <artifactId>owner</artifactId>
             <version>${owner.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4jcore.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4japi.version}</version>
         </dependency>
     </dependencies>
 

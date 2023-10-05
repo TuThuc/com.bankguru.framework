@@ -1,0 +1,11 @@
+testcases\com\bankguru\statement\Mini_Statement.class
+testcases\com\bankguru\customer\Customer_01_New_Customer.class
+testcases\com\bankguru\account\Account_01_New_Account.class
+testcases\com\bankguru\customer\Customer_02_Edit_Customer.class
+testcases\com\bankguru\customer\Customer_03_Delete_Customer.class
+testcases\com\bankguru\account\Account_03_Delete_Account.class
+testcases\com\bankguru\Payment.class
+testcases\com\bankguru\statement\Customised_Statement.class
+testcases\com\bankguru\account\Account_02_Edit_Account.class
+testcases\com\bankguru\common\Register.class
+testcases\com\bankguru\Change_Password.class

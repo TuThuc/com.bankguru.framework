@@ -327,10 +327,10 @@ public class Payment extends BaseTest {
 
         verifyEquals(deleteCustomerPage.getAlertText(driver),"Customer deleted successfully");
     }
-        @Parameters("envName")
     @AfterClass(alwaysRun = true)
     public void afterClass() {
-        closeBrowserAndDriver("envName");
+        //     closeBrowserAndDriver("envName");
+        closeBrowserAndDriver();
     }
     private WebDriver driver;
     private LoginPageObject loginPage;

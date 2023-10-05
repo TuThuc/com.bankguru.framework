@@ -11,7 +11,7 @@
         import org.openqa.selenium.firefox.FirefoxDriver;
         import org.openqa.selenium.firefox.FirefoxOptions;
         import org.openqa.selenium.ie.InternetExplorerDriver;
-        import org.openqa.selenium.opera.OperaDriver;
+       // import org.openqa.selenium.opera.OperaDriver;
         import org.openqa.selenium.remote.DesiredCapabilities;
         import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -34,8 +34,8 @@ public class GridFactory {
         DesiredCapabilities capability = null;
         BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
         if (browserList == BrowserList.FIREFOX) {
-            WebDriverManager.firefoxdriver().setup();
-            capability = DesiredCapabilities.firefox();
+           // WebDriverManager.firefoxdriver().setup();
+           // capability = DesiredCapabilities.firefox();
             capability.setBrowserName("firefox");
             capability.setPlatform(Platform.ANY);
             FirefoxOptions options = new FirefoxOptions();
@@ -47,9 +47,9 @@ public class GridFactory {
             options.addArguments("window-size = 1920x1080");
             driver = new FirefoxDriver(options);
         } else if (browserList == BrowserList.CHROME) {
-            WebDriverManager.chromedriver().setup();
+           // WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
-            capability = DesiredCapabilities.chrome();
+           // capability = DesiredCapabilities.chrome();
             capability.setBrowserName("chrome");
             capability.setPlatform(Platform.ANY);
             options.merge(capability);
@@ -69,7 +69,7 @@ public class GridFactory {
 
         } else if (browserList == BrowserList.OPERA) {
             WebDriverManager.operadriver().setup();
-            driver = new OperaDriver();
+           // driver = new OperaDriver();
         } else if (browserList == BrowserList.IE) {
             WebDriverManager.iedriver().arch32().setup();
             driver = new InternetExplorerDriver();

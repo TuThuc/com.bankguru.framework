@@ -131,10 +131,10 @@ public class Change_Password extends BaseTest {
 
         verifyEquals(changePassword.getFieldErrorMessageById(driver,"message22"),"Passwords do not Match");
     }
-    @Parameters("envName")
     @AfterClass(alwaysRun = true)
     public void afterClass() {
-        closeBrowserAndDriver("envName");
+        //     closeBrowserAndDriver("envName");
+        closeBrowserAndDriver();
     }
     private WebDriver driver;
     private LoginPageObject loginPage;

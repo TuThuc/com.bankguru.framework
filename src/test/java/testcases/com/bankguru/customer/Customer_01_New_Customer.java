@@ -124,12 +124,11 @@ public class Customer_01_New_Customer extends BaseTest {
         verifyEquals(newCustomer.getFieldErrorMessageById(driver, "message3"), "Address Field must not be blank");
     }
 
-    @Parameters("envName")
     @AfterClass(alwaysRun = true)
     public void afterClass() {
-        closeBrowserAndDriver("envName");
+        //     closeBrowserAndDriver("envName");
+        closeBrowserAndDriver();
     }
-
     private WebDriver driver;
     private DataHelper dataFaker;
     private String nameHaveNumber, nameHaveSpecialCharacter, nameHaveBlankSpace, nameValid, dateOfBirth, city;
