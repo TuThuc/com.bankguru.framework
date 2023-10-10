@@ -24,6 +24,7 @@
     <test name="Run on chrome ">
   <parameter name = "browserName" value = "chrome"/>
         <classes>
+            <class name="testcases.com.bankguru.common.Register"/>
       <class name="testcases.com.bankguru.customer.Customer_01_New_Customer"/>
       <class name="testcases.com.bankguru.customer.Customer_02_Edit_Customer"/>
       <class name="testcases.com.bankguru.customer.Customer_03_Delete_Customer"/>
