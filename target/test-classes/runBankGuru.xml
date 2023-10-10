@@ -3,10 +3,10 @@
 <parameter name ="envName" value = "local"/>
   <listeners>
       <listener class-name="commons.MethodListener"/>
-      <listener class-name="retryConfig.FailureRetryListener"/>
+      <!--<listener class-name="retryConfig.FailureRetryListener"/>-->
 <listener class-name="reportConfig.AllureTestListener"/>
   </listeners>
-<test name="Run on firefox ">
+<!--<test name="Run on firefox ">
   <parameter name = "browserName" value = "firefox"/>
     <classes>
         <class name="testcases.com.bankguru.common.Register"/>
@@ -20,7 +20,7 @@
         <class name="testcases.com.bankguru.statement.Mini_Statement"/>
         <class name="testcases.com.bankguru.Change_Password"/>
     </classes>
-</test>
+</test>-->
     <test name="Run on chrome ">
   <parameter name = "browserName" value = "chrome"/>
        <!-- <groups>

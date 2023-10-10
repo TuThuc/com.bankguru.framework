@@ -1,8 +1,102 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 107, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 358.056 s <<< FAILURE! - in TestSuite
-beforeClass(testcases.com.bankguru.customer.Customer_01_New_Customer)  Time elapsed: 23.749 s  <<< FAILURE!
+Tests run: 64, Failures: 11, Errors: 0, Skipped: 53, Time elapsed: 207.823 s <<< FAILURE! - in TestSuite
+beforeClass(testcases.com.bankguru.customer.Customer_01_New_Customer)  Time elapsed: 21.631 s  <<< FAILURE!
 java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
 	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
+
+beforeClass(testcases.com.bankguru.customer.Customer_02_Edit_Customer)  Time elapsed: 37.17 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C1IFLQ8', ip: '172.31.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: RemoteWebDriver
+	at testcases.com.bankguru.customer.Customer_02_Edit_Customer.beforeClass(Customer_02_Edit_Customer.java:29)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444
+	at testcases.com.bankguru.customer.Customer_02_Edit_Customer.beforeClass(Customer_02_Edit_Customer.java:29)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at testcases.com.bankguru.customer.Customer_02_Edit_Customer.beforeClass(Customer_02_Edit_Customer.java:29)
+
+afterClass(testcases.com.bankguru.customer.Customer_02_Edit_Customer)  Time elapsed: 41.859 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C1IFLQ8', ip: '172.31.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: RemoteWebDriver
+	at testcases.com.bankguru.customer.Customer_02_Edit_Customer.afterClass(Customer_02_Edit_Customer.java:288)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444
+	at testcases.com.bankguru.customer.Customer_02_Edit_Customer.afterClass(Customer_02_Edit_Customer.java:288)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at testcases.com.bankguru.customer.Customer_02_Edit_Customer.afterClass(Customer_02_Edit_Customer.java:288)
+
+beforeClass(testcases.com.bankguru.customer.Customer_03_Delete_Customer)  Time elapsed: 55.245 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at testcases.com.bankguru.customer.Customer_03_Delete_Customer.beforeClass(Customer_03_Delete_Customer.java:50)
+
+beforeClass(testcases.com.bankguru.account.Account_01_New_Account)  Time elapsed: 70.35 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at testcases.com.bankguru.account.Account_01_New_Account.beforeClass(Account_01_New_Account.java:38)
+
+beforeClass(testcases.com.bankguru.account.Account_02_Edit_Account)  Time elapsed: 86.484 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at testcases.com.bankguru.account.Account_02_Edit_Account.beforeClass(Account_02_Edit_Account.java:36)
+
+beforeClass(testcases.com.bankguru.account.Account_03_Delete_Account)  Time elapsed: 102.352 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C1IFLQ8', ip: '172.31.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: RemoteWebDriver
+	at testcases.com.bankguru.account.Account_03_Delete_Account.beforeClass(Account_03_Delete_Account.java:26)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502
+	at testcases.com.bankguru.account.Account_03_Delete_Account.beforeClass(Account_03_Delete_Account.java:26)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at testcases.com.bankguru.account.Account_03_Delete_Account.beforeClass(Account_03_Delete_Account.java:26)
+
+afterClass(testcases.com.bankguru.account.Account_03_Delete_Account)  Time elapsed: 106.985 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C1IFLQ8', ip: '172.31.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: RemoteWebDriver
+	at testcases.com.bankguru.account.Account_03_Delete_Account.afterClass(Account_03_Delete_Account.java:107)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502
+	at testcases.com.bankguru.account.Account_03_Delete_Account.afterClass(Account_03_Delete_Account.java:107)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at testcases.com.bankguru.account.Account_03_Delete_Account.afterClass(Account_03_Delete_Account.java:107)
+
+beforeClass(testcases.com.bankguru.statement.Customised_Statement)  Time elapsed: 150.463 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)
+	at testcases.com.bankguru.statement.Customised_Statement.beforeClass(Customised_Statement.java:46)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.150)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C1IFLQ8', ip: '172.31.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e521f875bdba3bee80e4b0df51310712
+*** Element info: {Using=name, value=uid}
+	at testcases.com.bankguru.statement.Customised_Statement.beforeClass(Customised_Statement.java:46)
+
+beforeClass(testcases.com.bankguru.statement.Mini_Statement)  Time elapsed: 165.773 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at testcases.com.bankguru.statement.Mini_Statement.beforeClass(Mini_Statement.java:33)
+
+beforeClass(testcases.com.bankguru.Change_Password)  Time elapsed: 206.887 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)
+	at testcases.com.bankguru.Change_Password.beforeClass(Change_Password.java:41)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.150)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C1IFLQ8', ip: '172.31.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54147}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37e249a95d87f8a80d87490b676e1a23
+*** Element info: {Using=name, value=uid}
+	at testcases.com.bankguru.Change_Password.beforeClass(Change_Password.java:41)
 

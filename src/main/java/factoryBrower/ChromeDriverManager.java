@@ -32,9 +32,9 @@ public class ChromeDriverManager implements BrowserFactory {
         chromaePrefs.put("profile.password_manager_enabled", false);
         options.setAcceptInsecureCerts(true);
         options.addArguments("--lang=vi");
-       // return WebDriverManager.chromedriver().capabilities(options).create();
-         WebDriver driver = new ChromeDriver(options);
-         return  driver;
+       return WebDriverManager.chromedriver().capabilities(options).create();
+         //WebDriver driver = new ChromeDriver(options);
+         //return  driver;
     }
 
 }

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="358.056" tests="107" errors="0" skipped="5" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="207.823" tests="64" errors="0" skipped="53" failures="11">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="E:\Setup\Maven Project\com.bankguru.framework\target\test-classes;E:\Setup\Maven Project\com.bankguru.framework\target\classes;C:\Users\Admin\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Admin\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-java\4.11.0\selenium-java-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-api\4.11.0\selenium-api-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.11.0\selenium-chrome-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.11.0\selenium-chromium-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.11.0\selenium-manager-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v113\4.11.0\selenium-devtools-v113-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.11.0\selenium-devtools-v114-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.11.0\selenium-devtools-v115-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.11.0\selenium-devtools-v85-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.11.0\selenium-edge-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.11.0\selenium-firefox-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-http\4.11.0\selenium-http-4.11.0.jar;C:\Users\Admin\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.11.0\selenium-ie-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.11.0\selenium-remote-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\io\netty\netty-buffer\4.1.92.Final\netty-buffer-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-codec-http\4.1.92.Final\netty-codec-http-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-codec\4.1.92.Final\netty-codec-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-handler\4.1.92.Final\netty-handler-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-common\4.1.92.Final\netty-common-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.92.Final\netty-transport-classes-epoll-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.92.Final\netty-transport-classes-kqueue-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-epoll\4.1.92.Final\netty-transport-native-epoll-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.92.Final\netty-transport-native-kqueue-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.92.Final\netty-transport-native-unix-common-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport\4.1.92.Final\netty-transport-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-resolver\4.1.92.Final\netty-resolver-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-api\1.26.0\opentelemetry-api-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-context\1.26.0\opentelemetry-context-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.26.0\opentelemetry-exporter-logging-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.26.0\opentelemetry-sdk-metrics-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.26.0-alpha\opentelemetry-extension-incubator-1.26.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.26.0-alpha\opentelemetry-sdk-logs-1.26.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.26.0-alpha\opentelemetry-api-logs-1.26.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.26.0-alpha\opentelemetry-api-events-1.26.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.26.0\opentelemetry-sdk-common-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.26.0\opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.26.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.26.0\opentelemetry-sdk-trace-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.26.0\opentelemetry-sdk-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.26.0-alpha\opentelemetry-semconv-1.26.0-alpha.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Admin\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Admin\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Admin\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Admin\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Admin\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.11.0\selenium-safari-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-support\4.11.0\selenium-support-4.11.0.jar;C:\Users\Admin\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Admin\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-json\4.11.0\selenium-json-4.11.0.jar;C:\Users\Admin\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.1\webdrivermanager-5.3.1.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.10\gson-2.10.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\Admin\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Admin\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Admin\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\Admin\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Admin\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.0\jackson-core-2.10.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.0\jackson-databind-2.10.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.0\jackson-annotations-2.10.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-testng\2.18.1\allure-testng-2.18.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-java-commons\2.18.1\allure-java-commons-2.18.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-model\2.18.1\allure-model-2.18.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-test-filter\2.18.1\allure-test-filter-2.18.1.jar;C:\Users\Admin\.m2\repository\joda-time\joda-time\2.0\joda-time-2.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.24\slf4j-api-1.7.24.jar;C:\Users\Admin\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Admin\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0.jar;C:\Users\Admin\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Admin\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\com\github\javafaker\javafaker\1.0.1\javafaker-1.0.1.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Admin\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Admin\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Admin\.m2\repository\org\aspectj\aspectjweaver\1.9.8\aspectjweaver-1.9.8.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;C:\Users\Admin\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;"/>
+    <property name="java.class.path" value="E:\Setup\Maven Project\com.bankguru.framework\target\test-classes;E:\Setup\Maven Project\com.bankguru.framework\target\classes;C:\Users\Admin\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Admin\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Admin\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Admin\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Admin\.m2\repository\io\github\bonigarcia\webdrivermanager\5.5.3\webdrivermanager-5.5.3.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\Admin\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Admin\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Users\Admin\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Users\Admin\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Users\Admin\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\Admin\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\Admin\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.0\jackson-core-2.10.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.0\jackson-databind-2.10.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.0\jackson-annotations-2.10.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-testng\2.18.1\allure-testng-2.18.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-java-commons\2.18.1\allure-java-commons-2.18.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-model\2.18.1\allure-model-2.18.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-test-filter\2.18.1\allure-test-filter-2.18.1.jar;C:\Users\Admin\.m2\repository\joda-time\joda-time\2.0\joda-time-2.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.24\slf4j-api-1.7.24.jar;C:\Users\Admin\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Admin\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0.jar;C:\Users\Admin\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Admin\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\com\github\javafaker\javafaker\1.0.1\javafaker-1.0.1.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Admin\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Admin\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Admin\.m2\repository\org\aspectj\aspectjweaver\1.9.8\aspectjweaver-1.9.8.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;C:\Users\Admin\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.14\bin"/>
-    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire17086719383204078112\surefirebooter10935273561350006776.jar C:\Users\Admin\AppData\Local\Temp\surefire17086719383204078112 2023-10-10T17-46-53_161-jvmRun1 surefire16161414654597335852tmp surefire_011849880782198466607tmp"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire9797375918519042834\surefirebooter785568531335568187.jar C:\Users\Admin\AppData\Local\Temp\surefire9797375918519042834 2023-10-10T22-05-12_660-jvmRun1 surefire17882692722975846110tmp surefire_0642823865766462331tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="E:\Setup\Maven Project\com.bankguru.framework\target\test-classes;E:\Setup\Maven Project\com.bankguru.framework\target\classes;C:\Users\Admin\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Admin\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-java\4.11.0\selenium-java-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-api\4.11.0\selenium-api-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.11.0\selenium-chrome-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.11.0\selenium-chromium-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.11.0\selenium-manager-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v113\4.11.0\selenium-devtools-v113-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.11.0\selenium-devtools-v114-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.11.0\selenium-devtools-v115-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.11.0\selenium-devtools-v85-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.11.0\selenium-edge-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.11.0\selenium-firefox-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-http\4.11.0\selenium-http-4.11.0.jar;C:\Users\Admin\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.11.0\selenium-ie-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.11.0\selenium-remote-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\io\netty\netty-buffer\4.1.92.Final\netty-buffer-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-codec-http\4.1.92.Final\netty-codec-http-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-codec\4.1.92.Final\netty-codec-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-handler\4.1.92.Final\netty-handler-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-common\4.1.92.Final\netty-common-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.92.Final\netty-transport-classes-epoll-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.92.Final\netty-transport-classes-kqueue-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-epoll\4.1.92.Final\netty-transport-native-epoll-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.92.Final\netty-transport-native-kqueue-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.92.Final\netty-transport-native-unix-common-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport\4.1.92.Final\netty-transport-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-resolver\4.1.92.Final\netty-resolver-4.1.92.Final.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-api\1.26.0\opentelemetry-api-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-context\1.26.0\opentelemetry-context-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.26.0\opentelemetry-exporter-logging-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.26.0\opentelemetry-sdk-metrics-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.26.0-alpha\opentelemetry-extension-incubator-1.26.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.26.0-alpha\opentelemetry-sdk-logs-1.26.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.26.0-alpha\opentelemetry-api-logs-1.26.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.26.0-alpha\opentelemetry-api-events-1.26.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.26.0\opentelemetry-sdk-common-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.26.0\opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.26.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.26.0\opentelemetry-sdk-trace-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.26.0\opentelemetry-sdk-1.26.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.26.0-alpha\opentelemetry-semconv-1.26.0-alpha.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Admin\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Admin\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Admin\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Admin\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Admin\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.11.0\selenium-safari-driver-4.11.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-support\4.11.0\selenium-support-4.11.0.jar;C:\Users\Admin\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Admin\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-json\4.11.0\selenium-json-4.11.0.jar;C:\Users\Admin\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.1\webdrivermanager-5.3.1.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.10\gson-2.10.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\Admin\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Admin\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Admin\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\Admin\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Admin\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.0\jackson-core-2.10.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.0\jackson-databind-2.10.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.0\jackson-annotations-2.10.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-testng\2.18.1\allure-testng-2.18.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-java-commons\2.18.1\allure-java-commons-2.18.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-model\2.18.1\allure-model-2.18.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-test-filter\2.18.1\allure-test-filter-2.18.1.jar;C:\Users\Admin\.m2\repository\joda-time\joda-time\2.0\joda-time-2.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.24\slf4j-api-1.7.24.jar;C:\Users\Admin\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Admin\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0.jar;C:\Users\Admin\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Admin\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\com\github\javafaker\javafaker\1.0.1\javafaker-1.0.1.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Admin\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Admin\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Admin\.m2\repository\org\aspectj\aspectjweaver\1.9.8\aspectjweaver-1.9.8.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;C:\Users\Admin\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;"/>
+    <property name="surefire.test.class.path" value="E:\Setup\Maven Project\com.bankguru.framework\target\test-classes;E:\Setup\Maven Project\com.bankguru.framework\target\classes;C:\Users\Admin\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Admin\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Admin\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Admin\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Admin\.m2\repository\io\github\bonigarcia\webdrivermanager\5.5.3\webdrivermanager-5.5.3.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\Admin\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Admin\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Users\Admin\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Users\Admin\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Users\Admin\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Users\Admin\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\Admin\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\Admin\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.0\jackson-core-2.10.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.0\jackson-databind-2.10.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.0\jackson-annotations-2.10.0.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-testng\2.18.1\allure-testng-2.18.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-java-commons\2.18.1\allure-java-commons-2.18.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-model\2.18.1\allure-model-2.18.1.jar;C:\Users\Admin\.m2\repository\io\qameta\allure\allure-test-filter\2.18.1\allure-test-filter-2.18.1.jar;C:\Users\Admin\.m2\repository\joda-time\joda-time\2.0\joda-time-2.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.24\slf4j-api-1.7.24.jar;C:\Users\Admin\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Admin\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0.jar;C:\Users\Admin\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Admin\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\com\github\javafaker\javafaker\1.0.1\javafaker-1.0.1.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Admin\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Admin\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Admin\.m2\repository\org\aspectj\aspectjweaver\1.9.8\aspectjweaver-1.9.8.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;C:\Users\Admin\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Admin"/>
     <property name="user.language" value="en"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire17086719383204078112\surefirebooter10935273561350006776.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire9797375918519042834\surefirebooter785568531335568187.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.14+8-LTS-263"/>
@@ -61,7 +61,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="beforeClass" classname="testcases.com.bankguru.customer.Customer_01_New_Customer" time="23.749">
+  <testcase name="beforeClass" classname="testcases.com.bankguru.customer.Customer_01_New_Customer" time="21.631">
     <failure message="Keys to send should be a not null CharSequence" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
 	at testcases.com.bankguru.customer.Customer_01_New_Customer.beforeClass(Customer_01_New_Customer.java:42)
 </failure>
@@ -70,124 +70,304 @@ null]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Oct 10, 2023 5:47:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+ChromeDriver was started successfully.
+Oct 10, 2023 10:05:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
   <testcase name="TC_01_New_Customer_With_Name_Empty" classname="testcases.com.bankguru.customer.Customer_01_New_Customer" time="0">
     <skipped message="Keys to send should be a not null CharSequence"/>
   </testcase>
-  <testcase name="TC_01_New_Customer_With_Name_Empty" classname="testcases.com.bankguru.customer.Customer_01_New_Customer" time="0.806"/>
   <testcase name="TC_02_New_Customer_With_Name_Number" classname="testcases.com.bankguru.customer.Customer_01_New_Customer" time="0">
     <skipped message="Keys to send should be a not null CharSequence"/>
   </testcase>
-  <testcase name="TC_02_New_Customer_With_Name_Number" classname="testcases.com.bankguru.customer.Customer_01_New_Customer" time="0.764"/>
   <testcase name="TC_03_New_Customer_With_Name_Have_Special_Character" classname="testcases.com.bankguru.customer.Customer_01_New_Customer" time="0">
     <skipped message="Keys to send should be a not null CharSequence"/>
   </testcase>
-  <testcase name="TC_03_New_Customer_With_Name_Have_Special_Character" classname="testcases.com.bankguru.customer.Customer_01_New_Customer" time="0.73"/>
   <testcase name="TC_04_New_Customer_With_Name_Start_As_Blank_Character" classname="testcases.com.bankguru.customer.Customer_01_New_Customer" time="0">
     <skipped message="Keys to send should be a not null CharSequence"/>
   </testcase>
-  <testcase name="TC_04_New_Customer_With_Name_Start_As_Blank_Character" classname="testcases.com.bankguru.customer.Customer_01_New_Customer" time="0.63"/>
   <testcase name="TC_05_New_Customer_With_Address_Empty" classname="testcases.com.bankguru.customer.Customer_01_New_Customer" time="0">
     <skipped message="Keys to send should be a not null CharSequence"/>
   </testcase>
-  <testcase name="TC_05_New_Customer_With_Address_Empty" classname="testcases.com.bankguru.customer.Customer_01_New_Customer" time="0.875"/>
-  <testcase name="TC_01_Edit_Customer_With_CustomerId_Is_Special_Character" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0.976"/>
-  <testcase name="TC_01_Edit_Customer_With_CustomerId_Is_Special_Character" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0.755"/>
-  <testcase name="TC_02_Edit_Customer_With_CustomerId_Is_Valid" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="1.795"/>
-  <testcase name="TC_02_Edit_Customer_With_CustomerId_Is_Valid" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="1.422"/>
-  <testcase name="TC_03_Edit_Customer_With_EmailAddress_Is_Blank" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0.125"/>
-  <testcase name="TC_03_Edit_Customer_With_EmailAddress_Is_Blank" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="1.727"/>
-  <testcase name="TC_04_Edit_Customer_With_City_Is_Blank" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="7.288"/>
-  <testcase name="TC_04_Edit_Customer_With_City_Is_Blank" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0.22"/>
-  <testcase name="TC_05_Edit_Customer_With_City_Have_Number" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="7.412"/>
-  <testcase name="TC_05_Edit_Customer_With_City_Have_Number" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="1.646"/>
-  <testcase name="TC_06_Edit_Customer_With_State_Is_Blank" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="7.21"/>
-  <testcase name="TC_06_Edit_Customer_With_State_Is_Blank" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="1.667"/>
-  <testcase name="TC_07_Edit_Customer_With_State_Have_Special_Character" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="1.489"/>
-  <testcase name="TC_07_Edit_Customer_With_State_Have_Special_Character" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="1.679"/>
-  <testcase name="TC_08_Edit_Customer_With_PIN_Have_Character" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="1.634"/>
-  <testcase name="TC_08_Edit_Customer_With_PIN_Have_Character" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0.618"/>
-  <testcase name="TC_09_Edit_Customer_With_PIN_More_Six_Number" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="1.077"/>
-  <testcase name="TC_09_Edit_Customer_With_PIN_More_Six_Number" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="4.897"/>
-  <testcase name="TC_10_Edit_Customer_With_Mobile_Number_Have_Character" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="1.678"/>
-  <testcase name="TC_10_Edit_Customer_With_Mobile_Number_Have_Character" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="8.496"/>
-  <testcase name="TC_11_Edit_Customer_With_Email_Address_Is_Invalid" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="1.7"/>
-  <testcase name="TC_11_Edit_Customer_With_Email_Address_Is_Invalid" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0.745"/>
-  <testcase name="TC_01_Delete_Customer_With_CustomerID_Is_Empty" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="0.897"/>
-  <testcase name="TC_01_Delete_Customer_With_CustomerID_Is_Empty" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="6.236"/>
-  <testcase name="TC_02_Delete_Customer_With_CustomerID_Have_Character" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="0.89"/>
-  <testcase name="TC_02_Delete_Customer_With_CustomerID_Have_Character" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="0.366"/>
-  <testcase name="TC_03_Delete_Customer_With_CustomerID_Have_Special_Character" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="0.933"/>
-  <testcase name="TC_03_Delete_Customer_With_CustomerID_Have_Special_Character" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="5.298"/>
-  <testcase name="TC_05_Delete_Customer_Successful" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="1.493"/>
-  <testcase name="TC_05_Delete_Customer_Successful" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="2.542"/>
-  <testcase name="TC_01_New_Account_With_CustomerId_Is_Special_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0.647"/>
-  <testcase name="TC_01_New_Account_With_CustomerId_Is_Special_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="4.057"/>
-  <testcase name="TC_02_New_Account_With_CustomerId_Have_Special_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0.512"/>
-  <testcase name="TC_02_New_Account_With_CustomerId_Have_Special_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="1.12"/>
-  <testcase name="TC_03_New_Account_With_CustomerId_Have_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0.498"/>
-  <testcase name="TC_03_New_Account_With_CustomerId_Have_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0.717"/>
-  <testcase name="TC_04_New_Account_With_Initial_Deposit_Have_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0.544"/>
-  <testcase name="TC_04_New_Account_With_Initial_Deposit_Have_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0.684"/>
-  <testcase name="TC_05_New_Account_With_Initial_Deposit_Have_Special_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0.154"/>
-  <testcase name="TC_05_New_Account_With_Initial_Deposit_Have_Special_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0.769"/>
-  <testcase name="TC_01_Edit_Account_With_Account_Number_Is_Empty" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="0.968"/>
-  <testcase name="TC_01_Edit_Account_With_Account_Number_Is_Empty" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="3.686"/>
-  <testcase name="TC_02_Edit_Account_With_Account_Number_Have_Character" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="1.126"/>
-  <testcase name="TC_02_Edit_Account_With_Account_Number_Have_Character" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="5.212"/>
-  <testcase name="TC_03_Edit_Account_With_Account_Number_Have_Special_Character" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="1.168"/>
-  <testcase name="TC_03_Edit_Account_With_Account_Number_Have_Special_Character" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="0.559"/>
-  <testcase name="TC_03_Edit_Account_With_Account_Number_Have_Special_Space" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="0.988"/>
-  <testcase name="TC_03_Edit_Account_With_Account_Number_Have_Special_Space" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="3.96"/>
-  <testcase name="TC_01_Delete_Account_With_Account_Number_Is_Empty" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="0.972"/>
-  <testcase name="TC_01_Delete_Account_With_Account_Number_Is_Empty" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="4.052"/>
-  <testcase name="TC_02_Delete_Account_With_Account_Number_Have_Character" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="0.349"/>
-  <testcase name="TC_02_Delete_Account_With_Account_Number_Have_Character" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="0.458"/>
-  <testcase name="TC_03_Delete_Account_With_Account_Number_Have_Special_Character" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="0.929"/>
-  <testcase name="TC_03_Delete_Account_With_Account_Number_Have_Special_Character" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="0.7"/>
-  <testcase name="TC_03_Delete_Account_With_Account_Number_Have_Special_Space" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="0.925"/>
-  <testcase name="TC_03_Delete_Account_With_Account_Number_Have_Special_Space" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="2.834"/>
-  <testcase name="TC_01_Customised_Statement_With_Account_Number_Is_Empty" classname="testcases.com.bankguru.statement.Customised_Statement" time="0.956"/>
-  <testcase name="TC_01_Customised_Statement_With_Account_Number_Is_Empty" classname="testcases.com.bankguru.statement.Customised_Statement" time="3.967"/>
-  <testcase name="TC_02_Customised_Statement_With_Account_Number_Have_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0.475"/>
-  <testcase name="TC_02_Customised_Statement_With_Account_Number_Have_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0.829"/>
-  <testcase name="TC_03_Customised_Statement_With_Account_Number_Have_Special_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0.937"/>
-  <testcase name="TC_03_Customised_Statement_With_Account_Number_Have_Special_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="5.31"/>
-  <testcase name="TC_04_Customised_Statement_With_Account_Number_Have_Character_Space" classname="testcases.com.bankguru.statement.Customised_Statement" time="0.945"/>
-  <testcase name="TC_04_Customised_Statement_With_Account_Number_Have_Character_Space" classname="testcases.com.bankguru.statement.Customised_Statement" time="5.793"/>
-  <testcase name="TC_05_Customised_Statement_With_Minimum_Transaction_Value_Have_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0.951"/>
-  <testcase name="TC_05_Customised_Statement_With_Minimum_Transaction_Value_Have_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="5.234"/>
-  <testcase name="TC_06_Customised_Statement_With_Minimum_Transaction_Value_Have_Special_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="1.269"/>
-  <testcase name="TC_06_Customised_Statement_With_Minimum_Transaction_Value_Have_Special_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="5.215"/>
-  <testcase name="TC_07_Customised_Statement_With_Minimum_Transaction_Value_Have_Character_Space" classname="testcases.com.bankguru.statement.Customised_Statement" time="0.262"/>
-  <testcase name="TC_07_Customised_Statement_With_Minimum_Transaction_Value_Have_Character_Space" classname="testcases.com.bankguru.statement.Customised_Statement" time="5.079"/>
-  <testcase name="TC_08_Customized_Statement_With_Number_Of_Tracsaction_Have_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0.944"/>
-  <testcase name="TC_08_Customized_Statement_With_Number_Of_Tracsaction_Have_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0.138"/>
-  <testcase name="TC_09_Customized_Statement_With_Number_Of_Tracsaction_Have_Special_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="1.201"/>
-  <testcase name="TC_09_Customized_Statement_With_Number_Of_Tracsaction_Have_Special_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0.532"/>
-  <testcase name="TC_10_Customized_Statement_With_Number_Of_Tracsaction_Have_Character_Space" classname="testcases.com.bankguru.statement.Customised_Statement" time="0.986"/>
-  <testcase name="TC_10_Customized_Statement_With_Number_Of_Tracsaction_Have_Character_Space" classname="testcases.com.bankguru.statement.Customised_Statement" time="0.104"/>
-  <testcase name="TC_01_Mini_Statement_With_Account_Number_Is_Empty" classname="testcases.com.bankguru.statement.Mini_Statement" time="0.905"/>
-  <testcase name="TC_01_Mini_Statement_With_Account_Number_Is_Empty" classname="testcases.com.bankguru.statement.Mini_Statement" time="3.925"/>
-  <testcase name="TC_02_Mini_Statement_With_Account_Number_Have_Character" classname="testcases.com.bankguru.statement.Mini_Statement" time="1.121"/>
-  <testcase name="TC_02_Mini_Statement_With_Account_Number_Have_Character" classname="testcases.com.bankguru.statement.Mini_Statement" time="5.233"/>
-  <testcase name="TC_03_Mini_Statement_With_Account_Number_Have_Special_Character" classname="testcases.com.bankguru.statement.Mini_Statement" time="0.04"/>
-  <testcase name="TC_03_Mini_Statement_With_Account_Number_Have_Special_Character" classname="testcases.com.bankguru.statement.Mini_Statement" time="5.258"/>
-  <testcase name="TC_04_Mini_Statement_With_Account_Number_Have_Special_Space" classname="testcases.com.bankguru.statement.Mini_Statement" time="0.889"/>
-  <testcase name="TC_04_Mini_Statement_With_Account_Number_Have_Special_Space" classname="testcases.com.bankguru.statement.Mini_Statement" time="5.23"/>
-  <testcase name="TC_01_Change_Password_With_Old_Password_Is_Empty" classname="testcases.com.bankguru.Change_Password" time="0.579"/>
-  <testcase name="TC_01_Change_Password_With_Old_Password_Is_Empty" classname="testcases.com.bankguru.Change_Password" time="4.104"/>
-  <testcase name="TC_02_Change_Password_With_New_Password_Is_Empty" classname="testcases.com.bankguru.Change_Password" time="0.226"/>
-  <testcase name="TC_02_Change_Password_With_New_Password_Is_Empty" classname="testcases.com.bankguru.Change_Password" time="5.234"/>
-  <testcase name="TC_03_Change_Password_With_New_Password_Have_Not_Number" classname="testcases.com.bankguru.Change_Password" time="0.767"/>
-  <testcase name="TC_03_Change_Password_With_New_Password_Have_Not_Number" classname="testcases.com.bankguru.Change_Password" time="1.27"/>
-  <testcase name="TC_04_Change_Password_With_New_Password_Have_Not_Special_Character" classname="testcases.com.bankguru.Change_Password" time="0.894"/>
-  <testcase name="TC_04_Change_Password_With_New_Password_Have_Not_Special_Character" classname="testcases.com.bankguru.Change_Password" time="0.768"/>
-  <testcase name="TC_05_Change_Password_With_New_Password_Have_Password_Terms" classname="testcases.com.bankguru.Change_Password" time="0.853"/>
-  <testcase name="TC_05_Change_Password_With_New_Password_Have_Password_Terms" classname="testcases.com.bankguru.Change_Password" time="0.822"/>
-  <testcase name="TC_06_Change_Password_With_Confirm_Password_Not_Match_Password" classname="testcases.com.bankguru.Change_Password" time="0.594"/>
-  <testcase name="TC_06_Change_Password_With_Confirm_Password_Not_Match_Password" classname="testcases.com.bankguru.Change_Password" time="0.742"/>
+  <testcase name="beforeClass" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="37.17">
+    <failure message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C1IFLQ8', ip: '172.31.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: RemoteWebDriver
+	at testcases.com.bankguru.customer.Customer_02_Edit_Customer.beforeClass(Customer_02_Edit_Customer.java:29)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444
+	at testcases.com.bankguru.customer.Customer_02_Edit_Customer.beforeClass(Customer_02_Edit_Customer.java:29)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at testcases.com.bankguru.customer.Customer_02_Edit_Customer.beforeClass(Customer_02_Edit_Customer.java:29)
+</failure>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2023 10:05:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC_01_Edit_Customer_With_CustomerId_Is_Special_Character" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_02_Edit_Customer_With_CustomerId_Is_Valid" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_03_Edit_Customer_With_EmailAddress_Is_Blank" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_04_Edit_Customer_With_City_Is_Blank" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_05_Edit_Customer_With_City_Have_Number" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_06_Edit_Customer_With_State_Is_Blank" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_07_Edit_Customer_With_State_Have_Special_Character" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_08_Edit_Customer_With_PIN_Have_Character" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_09_Edit_Customer_With_PIN_More_Six_Number" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_10_Edit_Customer_With_Mobile_Number_Have_Character" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_11_Edit_Customer_With_Email_Address_Is_Invalid" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="afterClass" classname="testcases.com.bankguru.customer.Customer_02_Edit_Customer" time="41.859">
+    <failure message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C1IFLQ8', ip: '172.31.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: RemoteWebDriver
+	at testcases.com.bankguru.customer.Customer_02_Edit_Customer.afterClass(Customer_02_Edit_Customer.java:288)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2444
+	at testcases.com.bankguru.customer.Customer_02_Edit_Customer.afterClass(Customer_02_Edit_Customer.java:288)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at testcases.com.bankguru.customer.Customer_02_Edit_Customer.afterClass(Customer_02_Edit_Customer.java:288)
+</failure>
+  </testcase>
+  <testcase name="beforeClass" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="55.245">
+    <failure message="Keys to send should be a not null CharSequence" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at testcases.com.bankguru.customer.Customer_03_Delete_Customer.beforeClass(Customer_03_Delete_Customer.java:50)
+</failure>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2023 10:06:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC_01_Delete_Customer_With_CustomerID_Is_Empty" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_02_Delete_Customer_With_CustomerID_Have_Character" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_03_Delete_Customer_With_CustomerID_Have_Special_Character" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_05_Delete_Customer_Successful" classname="testcases.com.bankguru.customer.Customer_03_Delete_Customer" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="beforeClass" classname="testcases.com.bankguru.account.Account_01_New_Account" time="70.35">
+    <failure message="Keys to send should be a not null CharSequence" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at testcases.com.bankguru.account.Account_01_New_Account.beforeClass(Account_01_New_Account.java:38)
+</failure>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2023 10:06:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC_01_New_Account_With_CustomerId_Is_Special_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_02_New_Account_With_CustomerId_Have_Special_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_03_New_Account_With_CustomerId_Have_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_04_New_Account_With_Initial_Deposit_Have_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_05_New_Account_With_Initial_Deposit_Have_Special_Character" classname="testcases.com.bankguru.account.Account_01_New_Account" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="beforeClass" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="86.484">
+    <failure message="Keys to send should be a not null CharSequence" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at testcases.com.bankguru.account.Account_02_Edit_Account.beforeClass(Account_02_Edit_Account.java:36)
+</failure>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2023 10:06:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC_01_Edit_Account_With_Account_Number_Is_Empty" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_02_Edit_Account_With_Account_Number_Have_Character" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_03_Edit_Account_With_Account_Number_Have_Special_Character" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_03_Edit_Account_With_Account_Number_Have_Special_Space" classname="testcases.com.bankguru.account.Account_02_Edit_Account" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="beforeClass" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="102.352">
+    <failure message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C1IFLQ8', ip: '172.31.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: RemoteWebDriver
+	at testcases.com.bankguru.account.Account_03_Delete_Account.beforeClass(Account_03_Delete_Account.java:26)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502
+	at testcases.com.bankguru.account.Account_03_Delete_Account.beforeClass(Account_03_Delete_Account.java:26)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at testcases.com.bankguru.account.Account_03_Delete_Account.beforeClass(Account_03_Delete_Account.java:26)
+</failure>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2023 10:06:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC_01_Delete_Account_With_Account_Number_Is_Empty" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_02_Delete_Account_With_Account_Number_Have_Character" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_03_Delete_Account_With_Account_Number_Have_Special_Character" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="TC_03_Delete_Account_With_Account_Number_Have_Special_Space" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="0">
+    <skipped message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
+  </testcase>
+  <testcase name="afterClass" classname="testcases.com.bankguru.account.Account_03_Delete_Account" time="106.985">
+    <failure message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-C1IFLQ8&apos;, ip: &apos;172.31.176.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C1IFLQ8', ip: '172.31.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: RemoteWebDriver
+	at testcases.com.bankguru.account.Account_03_Delete_Account.afterClass(Account_03_Delete_Account.java:107)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:32502
+	at testcases.com.bankguru.account.Account_03_Delete_Account.afterClass(Account_03_Delete_Account.java:107)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at testcases.com.bankguru.account.Account_03_Delete_Account.afterClass(Account_03_Delete_Account.java:107)
+</failure>
+  </testcase>
+  <testcase name="beforeClass" classname="testcases.com.bankguru.statement.Customised_Statement" time="150.463">
+    <failure message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)
+	at testcases.com.bankguru.statement.Customised_Statement.beforeClass(Customised_Statement.java:46)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.150)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C1IFLQ8', ip: '172.31.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e521f875bdba3bee80e4b0df51310712
+*** Element info: {Using=name, value=uid}
+	at testcases.com.bankguru.statement.Customised_Statement.beforeClass(Customised_Statement.java:46)
+</failure>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2023 10:07:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC_01_Customised_Statement_With_Account_Number_Is_Empty" classname="testcases.com.bankguru.statement.Customised_Statement" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_02_Customised_Statement_With_Account_Number_Have_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_03_Customised_Statement_With_Account_Number_Have_Special_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_04_Customised_Statement_With_Account_Number_Have_Character_Space" classname="testcases.com.bankguru.statement.Customised_Statement" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_05_Customised_Statement_With_Minimum_Transaction_Value_Have_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_06_Customised_Statement_With_Minimum_Transaction_Value_Have_Special_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_07_Customised_Statement_With_Minimum_Transaction_Value_Have_Character_Space" classname="testcases.com.bankguru.statement.Customised_Statement" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_08_Customized_Statement_With_Number_Of_Tracsaction_Have_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_09_Customized_Statement_With_Number_Of_Tracsaction_Have_Special_Character" classname="testcases.com.bankguru.statement.Customised_Statement" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_10_Customized_Statement_With_Number_Of_Tracsaction_Have_Character_Space" classname="testcases.com.bankguru.statement.Customised_Statement" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="beforeClass" classname="testcases.com.bankguru.statement.Mini_Statement" time="165.773">
+    <failure message="Keys to send should be a not null CharSequence" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at testcases.com.bankguru.statement.Mini_Statement.beforeClass(Mini_Statement.java:33)
+</failure>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2023 10:07:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC_01_Mini_Statement_With_Account_Number_Is_Empty" classname="testcases.com.bankguru.statement.Mini_Statement" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_02_Mini_Statement_With_Account_Number_Have_Character" classname="testcases.com.bankguru.statement.Mini_Statement" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_03_Mini_Statement_With_Account_Number_Have_Special_Character" classname="testcases.com.bankguru.statement.Mini_Statement" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="TC_04_Mini_Statement_With_Account_Number_Have_Special_Space" classname="testcases.com.bankguru.statement.Mini_Statement" time="0">
+    <skipped message="Keys to send should be a not null CharSequence"/>
+  </testcase>
+  <testcase name="beforeClass" classname="testcases.com.bankguru.Change_Password" time="206.887">
+    <failure message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)
+	at testcases.com.bankguru.Change_Password.beforeClass(Change_Password.java:41)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=117.0.5938.150)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C1IFLQ8', ip: '172.31.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54147}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37e249a95d87f8a80d87490b676e1a23
+*** Element info: {Using=name, value=uid}
+	at testcases.com.bankguru.Change_Password.beforeClass(Change_Password.java:41)
+</failure>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Oct 10, 2023 10:08:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC_01_Change_Password_With_Old_Password_Is_Empty" classname="testcases.com.bankguru.Change_Password" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_02_Change_Password_With_New_Password_Is_Empty" classname="testcases.com.bankguru.Change_Password" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_03_Change_Password_With_New_Password_Have_Not_Number" classname="testcases.com.bankguru.Change_Password" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_04_Change_Password_With_New_Password_Have_Not_Special_Character" classname="testcases.com.bankguru.Change_Password" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_05_Change_Password_With_New_Password_Have_Password_Terms" classname="testcases.com.bankguru.Change_Password" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
+  <testcase name="TC_06_Change_Password_With_Confirm_Password_Not_Match_Password" classname="testcases.com.bankguru.Change_Password" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of all elements located by By.name: uid (tried for 30 second(s) with 500 milliseconds interval)"/>
+  </testcase>
 </testsuite>
