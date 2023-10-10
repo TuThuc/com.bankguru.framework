@@ -136,7 +136,7 @@ public abstract class BaseTest {
     private void deleteAllureReport() {
         try {
 
-            String pathFolderDownload = GlobalConstants.getGlobalConstants().getProjectPath() + "/allure-results";
+            String pathFolderDownload = GlobalConstants.getGlobalConstants().getProjectPath() + "target/allure-results";
             File file = new File(pathFolderDownload);
             File[] listOfFiles = file.listFiles();
             for (int i = 0; i < listOfFiles.length; i++) {
