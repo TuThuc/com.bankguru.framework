@@ -73,7 +73,7 @@ public class Account_01_New_Account extends BaseTest {
     }
 
     @Description("New account with CustomerID have character ")
-    @Test(priority = 2, groups = "regressionTest")
+    @Test(groups = "regressionTest")
     public void TC_03_New_Account_With_CustomerId_Have_Character() {
 
         homePage.openSideBarPageByTitle(driver, "New Account");
