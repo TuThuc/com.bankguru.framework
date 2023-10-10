@@ -1,53 +1,28 @@
-1696517603552	geckodriver	INFO	Listening on 127.0.0.1:38038
-1696517604899	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "25403" "--remote ... localhost:25403/,http://[::1]:25403/" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofilezeZgDB"
+1696935084969	geckodriver	INFO	Listening on 127.0.0.1:28843
+1696935085808	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "43230" "--remote ... localhost:43230/,http://[::1]:43230/" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofile2c0Z8B"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1696517605874	Marionette	INFO	Marionette enabled
+1696935086701	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
-1696517605992	Marionette	INFO	Listening on port 60070
-WebDriver BiDi listening on ws://127.0.0.1:25403
-Read port: 60070
-1696517606406	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-JavaScript warning: moz-extension://2bf74ec3-dadc-4b45-82bb-642be0c4c6b9/lib/filter/antibanner.js, line 1176: unreachable code after return statement
-JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 287: NS_ERROR_FAILURE: No canonical URL set up.
-DevTools listening on ws://127.0.0.1:25403/devtools/browser/a97ca78c-d20d-4912-8d6e-bbb6bbe7bcfe
+1696935086786	Marionette	INFO	Listening on port 50599
+WebDriver BiDi listening on ws://127.0.0.1:43230
+Read port: 50599
+1696935087046	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://9d757427-9209-432f-b0cd-7e46afe6e830/lib/filter/antibanner.js, line 1176: unreachable code after return statement
+DevTools listening on ws://127.0.0.1:43230/devtools/browser/e3310c39-9b22-4d53-94e7-cdb712a9ab65
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.guru99.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.guru99.com."
-1696517631274	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
-1696517635919	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.1696517638821	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:60122
-1696517638825	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
-1696517638830	Marionette	INFO	Stopped listening on port 59674
-JavaScript error: resource://gre/modules/ConduitsChild.sys.mjs, line 108: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953714
-Dynamically enable window occlusion 1
-2be0c4c6b9/lib/utils/notifier.js:131:17
+1696935109329	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1696935114665	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:50649
+1696935114668	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1696935114672	Marionette	INFO	Stopped listening on port 50599
+JavaScript warning: moz-extension://9d757427-9209-432f-b0cd-7e46afe6e830/lib/libs/extended-css.js, line 611: Script terminated by timeout at:
+isNumber@moz-extension://9d757427-9209-432f-b0cd-7e46afe6e830/lib/libs/extended-css.js:611:12
+AsyncWrapper.prototype.wrappedCallback@moz-extension://9d757427-9209-432f-b0cd-7e46afe6e830/lib/libs/extended-css.js:336:22
 
-JavaScript error: resource://gre/modules/ConduitsChild.sys.mjs, line 108: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953700
-Dynamically enable window occlusion 1
-console.error: services.settings: 
-  blocklists/addons-bloomfilters Signature failed  TypeError: NetworkError: Network request failed
-console.error: services.settings: 
-  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
-  Stack:
-    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:107:1
-NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:5
-_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:907:14
-maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:812:38
+JavaScript warning: moz-extension://9d757427-9209-432f-b0cd-7e46afe6e830/lib/utils/notifier.js, line 131: Script terminated by timeout at:
+notifyListenersAsync/<@moz-extension://9d757427-9209-432f-b0cd-7e46afe6e830/lib/utils/notifier.js:131:17
 
-console.warn: services.settings: blocklists/gfx sync interrupted by shutdown
-console.warn: services.settings: main/normandy-recipes-capabilities sync interrupted by shutdown
-console.warn: services.settings: main/devtools-compatibility-browsers sync interrupted by shutdown
-console.warn: services.settings: main/language-dictionaries sync interrupted by shutdown
-console.warn: services.settings: main/password-recipes sync interrupted by shutdown
-console.warn: services.settings: main/password-rules sync interrupted by shutdown
-console.warn: services.settings: main/translations-identification-models sync interrupted by shutdown
-console.warn: services.settings: main/translations-wasm sync interrupted by shutdown
-console.warn: services.settings: main/cookie-banner-rules-list sync interrupted by shutdown
-console.warn: services.settings: main/search-config sync interrupted by shutdown
-console.warn: services.settings: main/translations-models sync interrupted by shutdown
-console.warn: services.settings: main/url-classifier-skip-urls sync interrupted by shutdown
-console.warn: services.settings: main/addons-manager-settings sync interrupted by shutdown
-console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
-console.warn: services.settings: main/search-telemetry-v2 sync interrupted by shutdown
-console.warn: services.settings: main/sites-classification sync interrupted by shutdown
-console.warn: services.settings: main/anti-tracking-url-decoration sync interrupted by shutdown
-console.error: (new AbortError("IndexedDB: main/windows-default-browser-agent getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+JavaScript error: resource://gre/modules/ConduitsChild.sys.mjs, line 108: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953485
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function

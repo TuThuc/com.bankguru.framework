@@ -10,14 +10,6 @@
   <test thread-count="2" parallel="tests" name="Run on chrome (failed)" verbose="0">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="testcases.com.bankguru.customer.Customer_03_Delete_Customer">
-        <methods>
-          <include name="TC_01_Delete_Customer_With_CustomerID_Is_Empty"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="initBeforeSuite"/>
-        </methods>
-      </class> <!-- testcases.com.bankguru.customer.Customer_03_Delete_Customer -->
       <class name="testcases.com.bankguru.customer.Customer_01_New_Customer">
         <methods>
           <include name="TC_05_New_Customer_With_Address_Empty"/>
@@ -32,17 +24,4 @@
       </class> <!-- testcases.com.bankguru.customer.Customer_01_New_Customer -->
     </classes>
   </test> <!-- Run on chrome (failed) -->
-  <test thread-count="2" parallel="tests" name="Run on firefox (failed)" verbose="0">
-    <parameter name="browserName" value="firefox"/>
-    <classes>
-      <class name="testcases.com.bankguru.customer.Customer_03_Delete_Customer">
-        <methods>
-          <include name="TC_01_Delete_Customer_With_CustomerID_Is_Empty"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="initBeforeSuite"/>
-        </methods>
-      </class> <!-- testcases.com.bankguru.customer.Customer_03_Delete_Customer -->
-    </classes>
-  </test> <!-- Run on firefox (failed) -->
 </suite> <!-- Failed suite [BankGuru] -->

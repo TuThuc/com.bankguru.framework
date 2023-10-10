@@ -3,7 +3,7 @@
 <parameter name ="envName" value = "local"/>
   <listeners>
       <listener class-name="commons.MethodListener"/>
-      <listener class-name="retryConfig.FailureRetryListener"/>
+      <!--<listener class-name="retryConfig.FailureRetryListener"/>-->
 <listener class-name="reportConfig.AllureTestListener"/>
   </listeners>
 <test name="Run on firefox ">
