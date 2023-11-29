@@ -1,48 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [BankGuru]" verbose="0">
-  <parameter name="envName" value="local"/>
+  <parameter name="envName" value="grid"/>
   <listeners>
     <listener class-name="commons.MethodListener"/>
+    <listener class-name="retryConfig.FailureRetryListener"/>
     <listener class-name="reportConfig.AllureTestListener"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="Run on chrome (failed)" verbose="0">
-    <parameter name="browserName" value="chrome"/>
+  <test thread-count="2" parallel="tests" name="Run on firefox (failed)" verbose="0">
+    <parameter name="ipAddress" value="localhost"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="portNumber" value="4444"/>
     <classes>
-      <class name="testcases.com.bankguru.account.Account_02_Edit_Account">
-        <methods>
-          <include name="TC_03_Edit_Account_With_Account_Number_Have_Special_Space"/>
-          <include name="beforeClass"/>
-          <include name="TC_01_Edit_Account_With_Account_Number_Is_Empty"/>
-          <include name="TC_02_Edit_Account_With_Account_Number_Have_Character"/>
-          <include name="afterClass"/>
-          <include name="TC_03_Edit_Account_With_Account_Number_Have_Special_Character"/>
-          <include name="initBeforeSuite"/>
-        </methods>
-      </class> <!-- testcases.com.bankguru.account.Account_02_Edit_Account -->
-      <class name="testcases.com.bankguru.customer.Customer_03_Delete_Customer">
-        <methods>
-          <include name="TC_01_Delete_Customer_With_CustomerID_Is_Empty"/>
-          <include name="TC_03_Delete_Customer_With_CustomerID_Have_Special_Character"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="TC_02_Delete_Customer_With_CustomerID_Have_Character"/>
-          <include name="TC_05_Delete_Customer_Successful"/>
-          <include name="initBeforeSuite"/>
-        </methods>
-      </class> <!-- testcases.com.bankguru.customer.Customer_03_Delete_Customer -->
-      <class name="testcases.com.bankguru.account.Account_01_New_Account">
-        <methods>
-          <include name="afterClass"/>
-          <include name="TC_01_New_Account_With_CustomerId_Is_Special_Character"/>
-          <include name="TC_02_New_Account_With_CustomerId_Have_Special_Character"/>
-          <include name="TC_03_New_Account_With_CustomerId_Have_Character"/>
-          <include name="TC_04_New_Account_With_Initial_Deposit_Have_Character"/>
-          <include name="beforeClass"/>
-          <include name="TC_05_New_Account_With_Initial_Deposit_Have_Special_Character"/>
-          <include name="initBeforeSuite"/>
-        </methods>
-      </class> <!-- testcases.com.bankguru.account.Account_01_New_Account -->
       <class name="testcases.com.bankguru.Change_Password">
         <methods>
           <include name="TC_03_Change_Password_With_New_Password_Have_Not_Number"/>
@@ -56,6 +25,58 @@
           <include name="initBeforeSuite"/>
         </methods>
       </class> <!-- testcases.com.bankguru.Change_Password -->
+      <class name="testcases.com.bankguru.account.Account_01_New_Account">
+        <methods>
+          <include name="afterClass"/>
+          <include name="TC_01_New_Account_With_CustomerId_Is_Special_Character"/>
+          <include name="TC_02_New_Account_With_CustomerId_Have_Special_Character"/>
+          <include name="TC_03_New_Account_With_CustomerId_Have_Character"/>
+          <include name="TC_04_New_Account_With_Initial_Deposit_Have_Character"/>
+          <include name="beforeClass"/>
+          <include name="TC_05_New_Account_With_Initial_Deposit_Have_Special_Character"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- testcases.com.bankguru.account.Account_01_New_Account -->
+      <class name="testcases.com.bankguru.statement.Customised_Statement">
+        <methods>
+          <include name="afterClass"/>
+          <include name="TC_01_Customised_Statement_With_Account_Number_Is_Empty"/>
+          <include name="TC_04_Customised_Statement_With_Account_Number_Have_Character_Space"/>
+          <include name="TC_03_Customised_Statement_With_Account_Number_Have_Special_Character"/>
+          <include name="beforeClass"/>
+          <include name="TC_05_Customised_Statement_With_Minimum_Transaction_Value_Have_Character"/>
+          <include name="TC_10_Customized_Statement_With_Number_Of_Tracsaction_Have_Character_Space"/>
+          <include name="TC_02_Customised_Statement_With_Account_Number_Have_Character"/>
+          <include name="TC_07_Customised_Statement_With_Minimum_Transaction_Value_Have_Character_Space"/>
+          <include name="TC_09_Customized_Statement_With_Number_Of_Tracsaction_Have_Special_Character"/>
+          <include name="TC_06_Customised_Statement_With_Minimum_Transaction_Value_Have_Special_Character"/>
+          <include name="TC_08_Customized_Statement_With_Number_Of_Tracsaction_Have_Character"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- testcases.com.bankguru.statement.Customised_Statement -->
+      <class name="testcases.com.bankguru.customer.Customer_03_Delete_Customer">
+        <methods>
+          <include name="TC_01_Delete_Customer_With_CustomerID_Is_Empty"/>
+          <include name="TC_03_Delete_Customer_With_CustomerID_Have_Special_Character"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="TC_04_Delete_Customer_With_CustomerID_Have_First_Character_Space"/>
+          <include name="TC_02_Delete_Customer_With_CustomerID_Have_Character"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- testcases.com.bankguru.customer.Customer_03_Delete_Customer -->
+      <class name="testcases.com.bankguru.customer.Customer_01_New_Customer">
+        <methods>
+          <include name="TC_05_New_Customer_With_Address_Empty"/>
+          <include name="TC_03_New_Customer_With_Name_Have_Special_Character"/>
+          <include name="TC_04_New_Customer_With_Name_Start_As_Blank_Character"/>
+          <include name="TC_01_New_Customer_With_Name_Empty"/>
+          <include name="TC_02_New_Customer_With_Name_Number"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- testcases.com.bankguru.customer.Customer_01_New_Customer -->
       <class name="testcases.com.bankguru.statement.Mini_Statement">
         <methods>
           <include name="TC_01_Mini_Statement_With_Account_Number_Is_Empty"/>
@@ -67,6 +88,17 @@
           <include name="initBeforeSuite"/>
         </methods>
       </class> <!-- testcases.com.bankguru.statement.Mini_Statement -->
+      <class name="testcases.com.bankguru.account.Account_02_Edit_Account">
+        <methods>
+          <include name="TC_03_Edit_Account_With_Account_Number_Have_Special_Space"/>
+          <include name="beforeClass"/>
+          <include name="TC_01_Edit_Account_With_Account_Number_Is_Empty"/>
+          <include name="TC_02_Edit_Account_With_Account_Number_Have_Character"/>
+          <include name="afterClass"/>
+          <include name="TC_03_Edit_Account_With_Account_Number_Have_Special_Character"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- testcases.com.bankguru.account.Account_02_Edit_Account -->
       <class name="testcases.com.bankguru.account.Account_03_Delete_Account">
         <methods>
           <include name="TC_01_Delete_Account_With_Account_Number_Is_Empty"/>
@@ -96,6 +128,38 @@
           <include name="initBeforeSuite"/>
         </methods>
       </class> <!-- testcases.com.bankguru.customer.Customer_02_Edit_Customer -->
+    </classes>
+  </test> <!-- Run on firefox (failed) -->
+  <test thread-count="2" parallel="tests" name="Run on chrome (failed)" verbose="0">
+    <parameter name="ipAddress" value="localhost"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="portNumber" value="4444"/>
+    <classes>
+      <class name="testcases.com.bankguru.Change_Password">
+        <methods>
+          <include name="TC_03_Change_Password_With_New_Password_Have_Not_Number"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="TC_05_Change_Password_With_New_Password_Have_Password_Terms"/>
+          <include name="TC_01_Change_Password_With_Old_Password_Is_Empty"/>
+          <include name="TC_02_Change_Password_With_New_Password_Is_Empty"/>
+          <include name="TC_04_Change_Password_With_New_Password_Have_Not_Special_Character"/>
+          <include name="TC_06_Change_Password_With_Confirm_Password_Not_Match_Password"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- testcases.com.bankguru.Change_Password -->
+      <class name="testcases.com.bankguru.account.Account_01_New_Account">
+        <methods>
+          <include name="afterClass"/>
+          <include name="TC_01_New_Account_With_CustomerId_Is_Special_Character"/>
+          <include name="TC_02_New_Account_With_CustomerId_Have_Special_Character"/>
+          <include name="TC_03_New_Account_With_CustomerId_Have_Character"/>
+          <include name="TC_04_New_Account_With_Initial_Deposit_Have_Character"/>
+          <include name="beforeClass"/>
+          <include name="TC_05_New_Account_With_Initial_Deposit_Have_Special_Character"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- testcases.com.bankguru.account.Account_01_New_Account -->
       <class name="testcases.com.bankguru.statement.Customised_Statement">
         <methods>
           <include name="afterClass"/>
@@ -113,6 +177,17 @@
           <include name="initBeforeSuite"/>
         </methods>
       </class> <!-- testcases.com.bankguru.statement.Customised_Statement -->
+      <class name="testcases.com.bankguru.customer.Customer_03_Delete_Customer">
+        <methods>
+          <include name="TC_01_Delete_Customer_With_CustomerID_Is_Empty"/>
+          <include name="TC_03_Delete_Customer_With_CustomerID_Have_Special_Character"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="TC_04_Delete_Customer_With_CustomerID_Have_First_Character_Space"/>
+          <include name="TC_02_Delete_Customer_With_CustomerID_Have_Character"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- testcases.com.bankguru.customer.Customer_03_Delete_Customer -->
       <class name="testcases.com.bankguru.customer.Customer_01_New_Customer">
         <methods>
           <include name="TC_05_New_Customer_With_Address_Empty"/>
@@ -125,6 +200,57 @@
           <include name="initBeforeSuite"/>
         </methods>
       </class> <!-- testcases.com.bankguru.customer.Customer_01_New_Customer -->
+      <class name="testcases.com.bankguru.statement.Mini_Statement">
+        <methods>
+          <include name="TC_01_Mini_Statement_With_Account_Number_Is_Empty"/>
+          <include name="TC_03_Mini_Statement_With_Account_Number_Have_Special_Character"/>
+          <include name="TC_04_Mini_Statement_With_Account_Number_Have_Special_Space"/>
+          <include name="afterClass"/>
+          <include name="TC_02_Mini_Statement_With_Account_Number_Have_Character"/>
+          <include name="beforeClass"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- testcases.com.bankguru.statement.Mini_Statement -->
+      <class name="testcases.com.bankguru.account.Account_02_Edit_Account">
+        <methods>
+          <include name="TC_03_Edit_Account_With_Account_Number_Have_Special_Space"/>
+          <include name="beforeClass"/>
+          <include name="TC_01_Edit_Account_With_Account_Number_Is_Empty"/>
+          <include name="TC_02_Edit_Account_With_Account_Number_Have_Character"/>
+          <include name="afterClass"/>
+          <include name="TC_03_Edit_Account_With_Account_Number_Have_Special_Character"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- testcases.com.bankguru.account.Account_02_Edit_Account -->
+      <class name="testcases.com.bankguru.account.Account_03_Delete_Account">
+        <methods>
+          <include name="TC_01_Delete_Account_With_Account_Number_Is_Empty"/>
+          <include name="beforeClass"/>
+          <include name="TC_02_Delete_Account_With_Account_Number_Have_Character"/>
+          <include name="TC_03_Delete_Account_With_Account_Number_Have_Special_Space"/>
+          <include name="afterClass"/>
+          <include name="TC_03_Delete_Account_With_Account_Number_Have_Special_Character"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- testcases.com.bankguru.account.Account_03_Delete_Account -->
+      <class name="testcases.com.bankguru.customer.Customer_02_Edit_Customer">
+        <methods>
+          <include name="TC_05_Edit_Customer_With_City_Have_Number"/>
+          <include name="TC_11_Edit_Customer_With_Email_Address_Is_Invalid"/>
+          <include name="afterClass"/>
+          <include name="TC_04_Edit_Customer_With_City_Is_Blank"/>
+          <include name="beforeClass"/>
+          <include name="TC_06_Edit_Customer_With_State_Is_Blank"/>
+          <include name="TC_07_Edit_Customer_With_State_Have_Special_Character"/>
+          <include name="TC_09_Edit_Customer_With_PIN_More_Six_Number"/>
+          <include name="TC_01_Edit_Customer_With_CustomerId_Is_Special_Character"/>
+          <include name="TC_02_Edit_Customer_With_CustomerId_Is_Valid"/>
+          <include name="TC_10_Edit_Customer_With_Mobile_Number_Have_Character"/>
+          <include name="TC_03_Edit_Customer_With_EmailAddress_Is_Blank"/>
+          <include name="TC_08_Edit_Customer_With_PIN_Have_Character"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- testcases.com.bankguru.customer.Customer_02_Edit_Customer -->
     </classes>
   </test> <!-- Run on chrome (failed) -->
 </suite> <!-- Failed suite [BankGuru] -->

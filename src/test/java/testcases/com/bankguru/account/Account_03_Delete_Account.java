@@ -18,7 +18,6 @@ public class Account_03_Delete_Account extends BaseTest {
     public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("Windows") String osName, @Optional("10") String osVersion,
                             @Optional("localhost") String ipAddress, @Optional("4444") String portNumber) {
         String env = System.getProperty("env");
-
         ConfigFactory.setProperty("server", env);
 
         environment = ConfigFactory.create(Environment.class);

@@ -13,7 +13,7 @@ import utilities.DataHelper;
 public class Register extends BaseTest {
 
     @Parameters({"envName", "serverName", "browserName", "ipAddress", "port", "osName", "osVersion"})
-    @BeforeTest( alwaysRun = true)
+    @BeforeTest
     public void beforeTest(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("Windows") String osName, @Optional("10") String osVersion,
                             @Optional("localhost") String ipAddress, @Optional("4444") String portNumber) {
         String env = System.getProperty("env");

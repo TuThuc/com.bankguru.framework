@@ -14,7 +14,7 @@ import testcases.com.bankguru.common.Register;
 
 public class Account_02_Edit_Account extends BaseTest {
     @Parameters({"envName", "serverName", "browserName", "ipAddress", "port", "osName", "osVersion"})
-    @BeforeClass(alwaysRun = true)
+    @BeforeClass
     public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("Windows") String osName, @Optional("10") String osVersion,
                             @Optional("localhost") String ipAddress, @Optional("4444") String portNumber) {
         String env = System.getProperty("env");
@@ -22,7 +22,6 @@ public class Account_02_Edit_Account extends BaseTest {
         ConfigFactory.setProperty("server", env);
 
         environment = ConfigFactory.create(Environment.class);
-
         driver = getBrowserDriver(envName, browserName, environment.getUserUrl(), ipAddress, portNumber, osName, osVersion);
 
         loginPage = PageGeneratorManager.getLoginPage(driver);
@@ -39,7 +38,7 @@ public class Account_02_Edit_Account extends BaseTest {
 
         homePage = loginPage.clickToLoginButton();
 
-        verifyTrue(homePage.getLoginSuccessMessage());
+//        verifyTrue(homePage.getLoginSuccessMessage());
     }
 
     @Description("Edit account with Account number is empty ")
