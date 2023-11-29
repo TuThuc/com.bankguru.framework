@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="BankGuru" thread-count = "2">
+<parameter name ="envName" value = "local"/>
+  <listeners>
+      <listener class-name="commons.MethodListener"/>
+      <!--<listener class-name="retryConfig.FailureRetryListener"/>-->
+<listener class-name="reportConfig.AllureTestListener"/>
+  </listeners>
+<test name="Run on firefox ">
+  <parameter name = "browserName" value = "firefox"/>
+    <classes>
+        <class name="testcases.com.bankguru.common.Register"/>
+       <class name="testcases.com.bankguru.customer.Customer_01_New_Customer"/>
+        <class name="testcases.com.bankguru.customer.Customer_02_Edit_Customer"/>
+        <class name="testcases.com.bankguru.customer.Customer_03_Delete_Customer"/>
+<!--        <class name="testcases.com.bankguru.account.Account_01_New_Account"/>-->
+<!--        <class name="testcases.com.bankguru.account.Account_02_Edit_Account"/>-->
+<!--        <class name="testcases.com.bankguru.account.Account_03_Delete_Account"/>-->
+<!--        <class name="testcases.com.bankguru.statement.Customised_Statement"/>-->
+<!--        <class name="testcases.com.bankguru.statement.Mini_Statement"/>-->
+<!--        <class name="testcases.com.bankguru.Change_Password"/>-->
+    </classes>
+</test>
+    <test name="Run on chrome ">
+  <parameter name = "browserName" value = "chrome"/>
+        <classes>
+            <class name="testcases.com.bankguru.common.Register"/>
+      <class name="testcases.com.bankguru.customer.Customer_01_New_Customer"/>
+      <class name="testcases.com.bankguru.customer.Customer_02_Edit_Customer"/>
+      <class name="testcases.com.bankguru.customer.Customer_03_Delete_Customer"/>
+<!--      <class name="testcases.com.bankguru.account.Account_01_New_Account"/>-->
+<!--      <class name="testcases.com.bankguru.account.Account_02_Edit_Account"/>-->
+<!--      <class name="testcases.com.bankguru.account.Account_03_Delete_Account"/>-->
+<!--      <class name="testcases.com.bankguru.statement.Customised_Statement"/>-->
+<!--      <class name="testcases.com.bankguru.statement.Mini_Statement"/>-->
+<!--      <class name="testcases.com.bankguru.Change_Password"/>-->
+  </classes>
+  </test>
+<!--    <test name="Run on chrome and smoke test ">-->
+<!--    <parameter name = "browserName" value = "chrome"/>-->
+<!--    <groups>-->
+<!--        <run>-->
+<!--            <include name="smoke"/>-->
+
+<!--        </run>-->
+<!--    </groups>-->
+<!--    <classes>-->
+<!--        <class name ="testcases.com.bankguru.common.Register"/>-->
+<!--        <class name ="testcases.com.bankguru.account.Account_01_New_Account"/>-->
+<!--        <class name ="testcases.com.bankguru.account.Account_02_Edit_Account"/>-->
+
+
+<!--    </classes>-->
+<!--    </test>-->
+
+</suite>
