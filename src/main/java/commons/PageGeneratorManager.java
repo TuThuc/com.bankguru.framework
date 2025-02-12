@@ -11,7 +11,18 @@ import pageObjects.customer.NewCustomerPageObject;
 import pageObjects.statement.CustomisedStatementPageObject;
 import pageObjects.statement.MiniStatementPageObject;
 
+import java.lang.reflect.Constructor;
+
 public class PageGeneratorManager {
+
+    public static <T extends BasePage>T getPageInstance(Class<T> pageClass, WebDriver driver){
+        try {
+            Constructor<T> constructor = pageClass.getConstructor(WebDriver.class);
+                return constructor.newInstance(driver);
+            } catch (Exception e){
+                throw new RuntimeException("Can't not init page class:" + pageClass.getSimpleName(), e);
+            }
+    }
     public static RegisterPageObject getRegisterPage(WebDriver driver) {
         return new RegisterPageObject(driver);
     }
